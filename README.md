@@ -41,6 +41,8 @@ osdevice                partition=C:
 systemroot              \Windows
 resumeobject            {3f80ecd0-df10-11ed-bafc-80a84b2564bb}
 nx                      OptIn
-bootmenupolicy          Standard```
+bootmenupolicy          Standard
+
+```
 
 But an infected one looks like this 
