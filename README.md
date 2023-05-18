@@ -98,6 +98,14 @@ No problemo maybe now
 
 Same demangle function! Hi there old friend :)))
 
+Cool but what about ```return (*(a1 + 88))(v2, &unk_62CEABC, 3i64);``` ?? Well honestly idk what to say just soley from a static perspective so let's try to use the debugger to understand it :))
+
+So when we demangle the string we get 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/071d7748-85e0-4d69-b466-f77048d9b66e)
+
+So 
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
