@@ -121,7 +121,10 @@ Cool next we have the function which takes that variable and
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/61d0e73f-8f7c-4eff-8f70-4d259bd5beb6)
 
-and so we can come to the conclusion that this must be a function which changes somehow the state of that variable. Cool so what are some possible function that could do this ?
+and so we can come to the conclusion that this must be a function which changes somehow the state of that variable. 
+Cool so what are some possible function that could do this ? there's only one such function in EFI_SYSTEM_TABLE which EFI_SET_VARIABLE SetVariable;
+
+So we conclude that this function simply take VbsPolicyDisable and sets it to 0B9.
 
 =============================================================================
 
