@@ -140,7 +140,8 @@ db  77h ; w
 .data:000000018000503F                 db  4Bh ; K.
 ```
 
-Now is there anything important about these bytes ? well yes
+Now is there anything important about these bytes ? well yes, if you by chance have read the first part of the blacklotus analysis you'll know that i referenced an asian's researcher work. Well
+that researcher was kind enough to also analyse the dropped bootkit . Please check it out(https://www.cnblogs.com/DirWang/p/17294545.html#autoid-3-2-1) , so in his analysis he was kind enough to give us that info. He points us to https://github.com/Mattiwatti/EfiGuard/blob/master/EfiGuardDxe/PatchWinload.c
 
 =============================================================================
 
