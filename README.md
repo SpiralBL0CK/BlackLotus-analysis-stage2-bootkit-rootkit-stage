@@ -147,7 +147,18 @@ that researcher was kind enough to also analyse the dropped bootkit . Please che
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/cb4aeaeb-44a0-46c5-a192-acf75ac5ecc5)
 
-Is there a specific reason behind this , honestly i don't know it's my first time analysing a bootkit 
+Is there a specific reason behind this , honestly i don't know it's my first time analysing a bootkit . Please do let me know or make a pr/pull request to edit this document if you have more experience than i do :) in this area
+
+=============================================================================
+
+Cool next, fortune favours us and the pseudo code from ida is simillar with assebmly 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/823b3ab5-5b15-4324-98ce-e01792b49cfb)
+
+so what i guess happens here is normal initialisation of EFI_SYSTEM_TABLE which basically i guess initializes which process to continue the boot process. and than we have the function call PatchBootManager
+
+=============================================================================
+PatchBootManager
 
 =============================================================================
 
