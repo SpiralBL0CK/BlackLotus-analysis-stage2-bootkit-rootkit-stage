@@ -113,6 +113,7 @@ there is says
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/6802517e-b815-40f5-88cd-3df8899baf0a)
 
+Cool so a struct with bunch of pointers, ye, but let's zoom in more.
 
 =============================================================================
 
