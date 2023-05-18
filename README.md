@@ -115,6 +115,14 @@ there is says
 
 Cool so a struct with bunch of pointers, ye, but let's zoom in more.
 
+So first it demangles VbsPolicyDisable, if we search google we come around eset analysis which states ```that this variable is evaluated by the Windows OS loader
+during boot and if defined, the core VBS features, such as HVCI and Credential Guard will not be initialized.``` , so basically this variable is responsible for current "security" at boot level.
+Cool next we have the function which takes that variable and 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/61d0e73f-8f7c-4eff-8f70-4d259bd5beb6)
+
+and so we can come to the conclusion that this must be a function which changes somehow the state of that variable. Cool so what are some possible function that could do this ?
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
