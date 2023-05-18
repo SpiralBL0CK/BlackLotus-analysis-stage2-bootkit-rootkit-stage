@@ -124,7 +124,9 @@ Cool next we have the function which takes that variable and
 and so we can come to the conclusion that this must be a function which changes somehow the state of that variable. 
 Cool so what are some possible function that could do this ? there's only one such function in EFI_SYSTEM_TABLE which EFI_SET_VARIABLE SetVariable;
 
-So we conclude that this function simply take VbsPolicyDisable and sets it to ```
+So we conclude that this function simply take VbsPolicyDisable and sets it to
+
+```
 db  77h ; w
 .data:0000000180005034                 db  59h ; Y
 .data:0000000180005035                 db    3
