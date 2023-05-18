@@ -63,6 +63,7 @@ We see some similarities but also some discepancies, anywayy....
 
 
 =============================================================================
+
 Cool so let's get this party started.
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/77afbc0d-1616-4af8-a8bb-4eaa5682a82b)
