@@ -108,7 +108,11 @@ So next when we end up to the call instruction
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/93c01e2a-86b0-4ba6-ae7c-899fb7aba5ac)
 
-and we get no info.... great, but why is that ? bc we don't have a .pdb file so we can get debug symbols.... Cool at least ida is helpfull here. So we know that the "grand" function takes as input SystemTable->RuntimeServices, which is of type EFI_SYSTEM_TABLE. Cool if we inspect it this is a ```A pointer to the EFI Runtime Services Table.``` .
+and we get no info.... great, but why is that ? bc we don't have a .pdb file so we can get debug symbols.... Cool at least ida is helpfull here. So we know that the "grand" function takes as input SystemTable->RuntimeServices, which is of type EFI_SYSTEM_TABLE. Cool if we inspect it this is a ```A pointer to the EFI Runtime Services Table.``` . if we search around googler we come around a bunch of docs but one crucial doc we come around is https://uefi.org/sites/default/files/resources/UEFI_Spec_2_1_D.pdf . 
+there is says 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/6802517e-b815-40f5-88cd-3df8899baf0a)
+
 
 =============================================================================
 
