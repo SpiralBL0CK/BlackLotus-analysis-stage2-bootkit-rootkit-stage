@@ -124,7 +124,23 @@ Cool next we have the function which takes that variable and
 and so we can come to the conclusion that this must be a function which changes somehow the state of that variable. 
 Cool so what are some possible function that could do this ? there's only one such function in EFI_SYSTEM_TABLE which EFI_SET_VARIABLE SetVariable;
 
-So we conclude that this function simply take VbsPolicyDisable and sets it to 0B9.
+So we conclude that this function simply take VbsPolicyDisable and sets it to ```
+db  77h ; w
+.data:0000000180005034                 db  59h ; Y
+.data:0000000180005035                 db    3
+.data:0000000180005036                 db  32h ; 2
+.data:0000000180005037                 db  4Dh ; M
+.data:0000000180005038                 db 0BDh ; ½
+.data:0000000180005039                 db  60h ; `
+.data:000000018000503A                 db  28h ; (
+.data:000000018000503B                 db 0F4h ; ô
+.data:000000018000503C                 db 0E7h ; ç
+.data:000000018000503D                 db  8Fh
+.data:000000018000503E                 db  78h ; x
+.data:000000018000503F                 db  4Bh ; K.
+```
+
+Now is there anything important about these bytes ? well yes
 
 =============================================================================
 
