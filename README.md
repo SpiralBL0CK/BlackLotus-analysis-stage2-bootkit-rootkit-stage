@@ -257,7 +257,9 @@ If we go again on uefi's spec page we see that ```Can be used on any device hand
 
 more precisely it has a function to which we are familiar(HandleProtocol). Cool
 
-Next we see another function call unkow this time to us. Let's see what arguments it takes, So it take 2,
+Next we see another function call unkow this time to us. Let's see what arguments it takes, So it take 2,than len of passed string as unicode , and ptr to a variable  
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2db35acb-9e5b-49ba-903c-0d46ad77dbe5)
 
 =============================================================================
 
