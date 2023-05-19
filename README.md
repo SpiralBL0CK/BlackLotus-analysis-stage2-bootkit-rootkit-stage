@@ -251,6 +251,8 @@ Cool so until the if everythin's self explanatory,now what about the if? We see 
 Now if we inspect the first bytes again and do a quick search we come around this (https://github.com/theopolis/uefi-firmware-parser/blob/master/uefi_firmware/guids/efiguids_ami.py)
 more precisely this ```'EFI_DEVICE_PATH_PROTOCOL_GUID': [0x09576e91, 0x6d3f, 0x11d2, 0x8e, 0x39, 0x00, 0xa0, 0xc9, 0x69, 0x72, 0x3b] ```.
 
+If we go again on uefi's spec page we see that ```Can be used on any device handle to obtain generic path/location information concerning the physical device or logical device.```.  Coon we also se more like this ```The device path describes the location of the device the handle is for```. OK cool and if we scroll just a little we see a function called _EFI_DEVICE_PATH_PROTOCOL. Ok so to conclude we know this this has ti di with  EFI_DEVICE_PATH_PROTOCOL_GUID but our function is of type EFI_BOOT_SERVICES. So is there any function in EFI_BOOT_SERVICES which could do something like handling a protocol ? yes there is  
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
