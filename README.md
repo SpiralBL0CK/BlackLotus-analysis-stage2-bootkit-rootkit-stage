@@ -188,7 +188,20 @@ Cool next, fortune favours us and the pseudo code from ida is simillar with asse
 so what i guess happens here is normal initialisation of EFI_SYSTEM_TABLE which basically i guess initializes which process to continue the boot process. and than we have the function call PatchBootManager
 
 =============================================================================
+
 PatchBootManager
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/531e8380-ea15-4882-9006-7506f6f823ef)
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4ad8b398-cb66-4549-ae29-3c0ca87c8ab6)
+
+![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/107e0158-d958-403b-b691-ed7e90836a5c)
+
+And from pseudo code
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/34213178-a799-4af8-87e5-3ebb70e9c49c)
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/0748de2e-cead-4525-990b-87ca1a8ecfa3)
+
 
 =============================================================================
 
