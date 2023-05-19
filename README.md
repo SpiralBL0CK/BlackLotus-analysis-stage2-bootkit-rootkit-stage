@@ -190,6 +190,7 @@ so what i guess happens here is normal initialisation of EFI_SYSTEM_TABLE which 
 =============================================================================
 
 PatchBootManager
+
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/531e8380-ea15-4882-9006-7506f6f823ef)
 
 ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4ad8b398-cb66-4549-ae29-3c0ca87c8ab6)
