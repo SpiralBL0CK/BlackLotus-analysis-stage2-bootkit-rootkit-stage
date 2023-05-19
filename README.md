@@ -204,7 +204,10 @@ And from pseudo code
 ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/0748de2e-cead-4525-990b-87ca1a8ecfa3)
 
 
-Coll so first function call we see it does is HandleProtocol. So what the code does it do ? 
+Coll so first function call we see it does is HandleProtocol. So what the code does it do ? Luckly we stumble upong this when doing a quick google search (https://tianocore-docs.github.io/edk2-ModuleWriteGuide/draft/5_uefi_drivers/54_communication_between_uefi_drivers.html) and we see that it ```  retrieve protocols```. Cool nothign rlly that can i make sense. Ye i gotcha' fam. So basically this retrives communication informationmethods used by other UEFI drivers. Cool some more digging. we see the second parameter is 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4dcc9941-76b3-4c5a-94c3-3f74e6a71185)
+
 
 =============================================================================
 
