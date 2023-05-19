@@ -218,6 +218,9 @@ So in our case grabs info about the bootkit. Now there's a problem we can't rlly
 and i tend to presume that the structure(result from previous function call)will be in rbx. 
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2f78a287-f5a9-4589-979d-81137ffbbd8e)
+ Next we call demangle string![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/5d82e2cb-f627-44b9-8765-b2c73dc922d3)
+
+ ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/37bab900-171e-4cc8-9150-f537242e8f4e)
 
 =============================================================================
 
