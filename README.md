@@ -204,6 +204,8 @@ And from pseudo code
 ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/0748de2e-cead-4525-990b-87ca1a8ecfa3)
 
 
+Coll so first function call we see it does is HandleProtocol. So what the code does it do ? 
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
