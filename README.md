@@ -253,6 +253,11 @@ more precisely this ```'EFI_DEVICE_PATH_PROTOCOL_GUID': [0x09576e91, 0x6d3f, 0x1
 
 If we go again on uefi's spec page we see that ```Can be used on any device handle to obtain generic path/location information concerning the physical device or logical device.```.  Coon we also se more like this ```The device path describes the location of the device the handle is for```. OK cool and if we scroll just a little we see a function called _EFI_DEVICE_PATH_PROTOCOL. Ok so to conclude we know this this has ti di with  EFI_DEVICE_PATH_PROTOCOL_GUID but our function is of type EFI_BOOT_SERVICES. So is there any function in EFI_BOOT_SERVICES which could do something like handling a protocol ? yes there is . If we inspect https://www.intel.com/content/dam/doc/product-specification/efi-v1-10-specification.pdf section 4.4 we see 
 
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/dbcbb1a1-9ce7-46b8-abe2-18cc9da0b5fc)
+
+more precisely it has a function to which we are familiar(HandleProtocol). Cool
+
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
