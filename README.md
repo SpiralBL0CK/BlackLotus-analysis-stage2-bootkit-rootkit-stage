@@ -49,6 +49,18 @@ But an infected one looks like this
 
 =============================================================================
 
+=============================================================================
+
+Before we get started how does one setup the environment for the analysis of an efi module anyway ?
+Well courtesy goes to @MaverickMusic__ , during a disscussion with him he handed me this( ```https://zhuanlan-zhihu-com.translate.goog/p/343293521?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-GB``` ). 
+Now i didn't completly follow the stepts there so here's what exactly i did in order to have the environment up and running :
+
+  -First i installed edk2(https://github.com/tianocore/tianocore.github.io/wiki/Windows-systems)
+  -Second i have configured my ovmf as debug not realease(this will help us later). Here is the command ```build -a X64 -t VS2019 -b DEBUG -p OvmfPkg/OvmfPkgX64.dsc```
+  -Third i had to configure my windbg. How tf did i do this ? 
+    I downloaded everything from this link(```git clone https://github.com/microsoft/WinDbg-Samples```)
+=============================================================================
+
 Bindiffing the original winload.efi with the one dropped by the blacklotus
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/a5beeebe-6d7e-47ed-92ce-72767242a3cc)
