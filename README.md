@@ -221,6 +221,14 @@ and i tend to presume that the structure(result from previous function call)will
  Next we call demangle string![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/5d82e2cb-f627-44b9-8765-b2c73dc922d3)
 
  ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/37bab900-171e-4cc8-9150-f537242e8f4e)
+which gets us 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/77ac1280-d7de-4f0e-956c-a6f6f7aeedd6)
+
+and than we call 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4f66b2c5-a3c3-457d-88f2-fde4e55a1b7f)
+
 
 =============================================================================
 
