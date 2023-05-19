@@ -229,6 +229,20 @@ and than we call
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4f66b2c5-a3c3-457d-88f2-fde4e55a1b7f)
 
+=============================================================================
+
+sub_180002B14
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4b229ff9-43d3-4e22-90e9-628c8121b27b)
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8d84f664-a402-4e78-b17d-55aa31b24cb7)
+
+![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/096bf634-bf22-49ad-b034-909215dc9ecc)
+
+and pseudo code 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/327d9ae9-7813-436b-8cec-c1351dd30ec2)
+
 
 =============================================================================
 
