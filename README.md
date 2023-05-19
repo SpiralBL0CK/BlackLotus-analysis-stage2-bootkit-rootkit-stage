@@ -75,6 +75,8 @@ Now i didn't completly follow the stepts there so here's what exactly i did in o
     
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7e5cd8f4-3638-43bc-9646-9b037c3e8096)
 
+So cool now to make sense of this output, for our case the only relevant line is ```EntryPoint=0x000062C9A8C ``` which is like the preffered loaded address whenever we run the bootkit. Specifically for the bootkit it varies between ```0x62C4A8C or 0x62C9A8C```
+
 =============================================================================
 
 Bindiffing the original winload.efi with the one dropped by the blacklotus
