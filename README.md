@@ -56,7 +56,9 @@ Well courtesy goes to @MaverickMusic__ , during a disscussion with him he handed
 Now i didn't completly follow the stepts there so here's what exactly i did in order to have the environment up and running :
 
   -First i installed edk2(https://github.com/tianocore/tianocore.github.io/wiki/Windows-systems)
+  
   -Second i have configured my ovmf as debug not realease(this will help us later). Here is the command ```build -a X64 -t VS2019 -b DEBUG -p OvmfPkg/OvmfPkgX64.dsc```
+  
   -Third i had to configure my windbg. How tf did i do this ? 
     I downloaded everything from this link(```git clone https://github.com/microsoft/WinDbg-Samples```)
 =============================================================================
