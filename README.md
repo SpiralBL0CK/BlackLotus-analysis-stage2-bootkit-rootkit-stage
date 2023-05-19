@@ -212,6 +212,10 @@ If we search for that specifc bytes we come across this
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8356ae68-043b-450a-b549-ee471b93483c)
 
+so wtf does EFI_LOADED_IMAGE_PROTOCOL_GUID do ? quoting from(https://uefi.org/specs/UEFI/2.10/09_Protocols_EFI_Loaded_Image.html) ```Can be used on any image handle to obtain information about the loaded image.``` , what type of info ? ```This section defines EFI_LOADED_IMAGE_PROTOCOL and the EFI_LOADED_IMAGE_DEVICE_PATH_PROTOCOL. Respectively, these protocols describe an Image that has been loaded into memory and specifies the device path used when a PE/COFF image was loaded through the EFI Boot Service LoadImage(). These descriptions include the source from which the image was loaded, the current location of the image in memory, the type of memory allocated for the image, and the parameters passed to the image when it was invoked.```` 
+
+
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
