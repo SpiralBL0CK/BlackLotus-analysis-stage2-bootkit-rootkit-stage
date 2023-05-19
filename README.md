@@ -244,6 +244,12 @@ and pseudo code
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/327d9ae9-7813-436b-8cec-c1351dd30ec2)
 
 
+Cool so until the if everythin's self explanatory,now what about the if? We see again it does a call with unk_180005010 as parameters which is an array of bytes again, upon further inspection it looks like this 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/89bcca85-cfc0-4b04-b887-9145db35f10e).
+
+Now if we inspect the first bytes again and do a quick search we come around this ()
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
