@@ -60,7 +60,15 @@ Now i didn't completly follow the stepts there so here's what exactly i did in o
   -Second i have configured my ovmf as debug not realease(this will help us later). Here is the command ```build -a X64 -t VS2019 -b DEBUG -p OvmfPkg/OvmfPkgX64.dsc```
   
   -Third i had to configure my windbg. How tf did i do this ? 
-    I downloaded everything from this link(```git clone https://github.com/microsoft/WinDbg-Samples```)
+    I downloaded everything from this link(```git clone https://github.com/microsoft/WinDbg-Samples```). Than i compiled ExdiGdbSrv.sln. Thank i followed everything from this link(https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/setting-up-qemu-kernel-mode-debugging-using-exdi), from whevere it said ```Use regsvr32 to register the DLL in an Administrator command prompt.``` till ```PS>.\Start-ExdiDebugger.ps1 -ExdiTarget "QEMU" -GdbPort 1234 -Architecture x64 -ExdiDropPath "C:\path\to\built\exdi\files"```. Confusing i know but please wait patiencly as i will defently make a video where i will explain every step!
+    Cool so now that we have a setup environment for debugging how tf do we debug the code ?
+    So we start qemu in my case i did it by executing ```qemu-system-x86_64.exe -L . -bios OVMF.fd -hdd dos.img -debugcon file:debug.log -global isa-debugcon.iobase=0x402```
+    . Once i ran qemu commmand i instantly went and selected compat_monitor0 from view menu of qemu. It should look like that when you do that. 
+        ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d5399964-8532-4bd8-a15e-ad14528f7b3a)
+
+  also after selecting this you should input gdbserver to start a remeote instance of gdb debuggin to which we will attach with windbg using this command  ```.\Start-ExdiDebugger.ps1 -ExdiTarget "QEMU" -GdbPort 1234 -Architecture x64```
+    
+
 =============================================================================
 
 Bindiffing the original winload.efi with the one dropped by the blacklotus
