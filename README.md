@@ -267,6 +267,16 @@ Now if we inspect this in a debugger
 
 we see a weird thing rcx has a debug string which AllocatePool, which comes after a function call so we conclude that this was possible a call to AllocatePool, funny enough if you also inspect the specs you'll see that boot_services also has a ptr to AllocatePool which only makes our assumption stronger.
 
+Cool so if we manage to allocate enough space(the check if >= 0 is to check if we succesed to allocate bc if EFI_OUT_OF_RESOURCES is implemented as 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/a4e16a3b-57ff-44e4-b6a0-86a971f8b429)
+
+it's only safe to assume 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/6b4cb668-f835-474a-9ceb-0fcc8599790b)
+
+is used for success allocation)
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
