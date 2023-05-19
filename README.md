@@ -89,7 +89,7 @@ Bindiffing the original winload.efi with the one dropped by the blacklotus
 
 ![4](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/76aeb4af-f423-41eb-bbf6-0d08aed2433e)
 
-We see some similarities but also some discepancies, anywayy....
+We see some similarities but also some discepancies, but nothing usefull,anywayy....
 
 
 =============================================================================
