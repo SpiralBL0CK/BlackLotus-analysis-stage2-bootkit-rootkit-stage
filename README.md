@@ -208,6 +208,9 @@ Coll so first function call we see it does is HandleProtocol. So what the code d
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4dcc9941-76b3-4c5a-94c3-3f74e6a71185)
 
+If we search for that specifc bytes we come across this
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8356ae68-043b-450a-b549-ee471b93483c)
 
 =============================================================================
 
