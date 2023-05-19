@@ -257,6 +257,7 @@ If we go again on uefi's spec page we see that ```Can be used on any device hand
 
 more precisely it has a function to which we are familiar(HandleProtocol). Cool
 
+Next we see another function call unkow this time to us. Let's see what arguments it takes, So it take 2,
 
 =============================================================================
 
