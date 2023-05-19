@@ -67,7 +67,13 @@ Now i didn't completly follow the stepts there so here's what exactly i did in o
         ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d5399964-8532-4bd8-a15e-ad14528f7b3a)
 
   also after selecting this you should input gdbserver to start a remeote instance of gdb debuggin to which we will attach with windbg using this command  ```.\Start-ExdiDebugger.ps1 -ExdiTarget "QEMU" -GdbPort 1234 -Architecture x64```
+     Cool so once we connect to it will look like this 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3047fb82-60d2-496f-8957-add54549d3ca)
+  
+    So how do we set up a breakpoint in order to debug the bootkit? Well that's we we compiled the ovmf image as debug rather than release. If you specifically start qemu with that command you'll have qemu run and debug messages will be logged in a file called debug.log , which looks like this 
     
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7e5cd8f4-3638-43bc-9646-9b037c3e8096)
 
 =============================================================================
 
