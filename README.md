@@ -261,6 +261,12 @@ Next we see another function call unkow this time to us. Let's see what argument
 
 ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2db35acb-9e5b-49ba-903c-0d46ad77dbe5)
 
+Now if we inspect this in a debugger 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/0fa822bc-c19b-494c-a63c-3c6e6f39317c)
+
+we see a weird thing rcx has a debug string which AllocatePool, which comes after a function call so we conclude that this was possible a call to AllocatePool, funny enough if you also inspect the specs you'll see that boot_services also has a ptr to AllocatePool which only makes our assumption stronger.
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
