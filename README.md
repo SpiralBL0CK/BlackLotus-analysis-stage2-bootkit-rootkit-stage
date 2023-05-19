@@ -248,7 +248,8 @@ Cool so until the if everythin's self explanatory,now what about the if? We see 
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/89bcca85-cfc0-4b04-b887-9145db35f10e).
 
-Now if we inspect the first bytes again and do a quick search we come around this ()
+Now if we inspect the first bytes again and do a quick search we come around this (https://github.com/theopolis/uefi-firmware-parser/blob/master/uefi_firmware/guids/efiguids_ami.py)
+more precisely this ```'EFI_DEVICE_PATH_PROTOCOL_GUID': [0x09576e91, 0x6d3f, 0x11d2, 0x8e, 0x39, 0x00, 0xa0, 0xc9, 0x69, 0x72, 0x3b] ```.
 
 =============================================================================
 
