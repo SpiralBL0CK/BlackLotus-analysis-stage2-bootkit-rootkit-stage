@@ -353,6 +353,7 @@ And this is how it looks into memory
 
 what is rax? rax is a handle to the image :) don't be dumb like me when i first tought that it is a memory zone :)
 
+Cool before we head in for some more let me quickly explain wtf is winload.efi. so 
 
 
 =============================================================================
