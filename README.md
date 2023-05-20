@@ -327,7 +327,9 @@ So here we also see something nice which is
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/c6d60d0e-954e-4e6d-9ab3-98e63b8259f9)
 
-the fact that here the memory block has the pattern afafafaf in it 
+the fact that here the memory block has the pattern afafafaf in it .
+
+So what happens next
 
 
 =============================================================================
