@@ -285,6 +285,11 @@ So yeah anyway we end up calling memcpy after the call our buffer looks like thi
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/fa69388b-1cca-403e-a073-4ce8331900d7)
 
+We than append some bytes to get the buffer to look like this 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/85b5591b-9ea5-4b0a-8c23-1bcfdad7a0c5)
+
+And than call a function called FileDevicePath_call
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
