@@ -387,8 +387,11 @@ This function will enable the new GDT and IDT, and then completely hand over the
 
 And from there winload.efi does it job which is to load windows and do some more hw work before it hands control to kernel . 
 
-Now after this sort briefing 
+Now after this sort briefing as we were saying 
 
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/5cd88999-9608-46bc-98e4-04505fb32cfc)
+
+we further check to see if loading it into memory successeded and than we do a function called ati_analysis_rdtsc_aia_cu_4e1f to which you should be familiar if you have already read the first part of this analysis.
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
