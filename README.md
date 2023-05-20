@@ -342,6 +342,10 @@ Now after we finish with this we check to see if the device path in our case is 
 Before we finish with this function i would like to point another interesting fact , this is how it looks in memory the bootservice table :) it looks like according to the specs with the begging header just figured it might be interesting to let here for anyone who wanna do feature work and find themselves finding this string BOOTSERVF in a dump, this is deffno bootservice table 
 =============================================================================
 
+Right so what happens next ??? well we check to see if we managed to locate the winload.efi file and we load it into memory. this is the pseudo code :)
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/c8dbffda-1779-4f26-9780-e6e1d1039193)
+
 
 =============================================================================
 
