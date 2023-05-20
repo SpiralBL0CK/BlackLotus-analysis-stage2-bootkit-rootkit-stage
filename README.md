@@ -351,7 +351,10 @@ And this is how it looks into memory
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/318b0fa6-62cd-42fc-8a00-748cca29885f)
 
-what is rax? rax is a handle to the image :) don't be dumb like me when i first tought that it is a memory range :)
+what is rax? rax is a handle to the image :) don't be dumb like me when i first tought that it is a memory zone :)
+
+
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
