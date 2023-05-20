@@ -329,7 +329,13 @@ So here we also see something nice which is
 
 the fact that here the memory block has the pattern afafafaf in it .
 
-So what happens next
+So what happens next is that we get two buffer which look like this after the main loop executes
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/08238484-8e74-4220-aa7f-7f54771f58d1)
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/897d6022-3cd1-4142-b610-b7674012f8ef)
+
+And truelly speaking we are interested in only the first one because that's what get's returned, so we can conclude this simply i guess copies the device path and clear some garbabe from buffer. :))
 
 
 =============================================================================
