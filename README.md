@@ -319,6 +319,8 @@ So yeah we see pop rbx and after call we see rbx=0x48
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/204da595-ad18-4a15-8056-a88b32e34d97)
 
+we than call against strlen again on the same string , i guess this is just bc on next line precisly , ```  v6 + v4 * v5; ``` we do v4*v5 which is like i guess some way of having unicode strings i guess
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
