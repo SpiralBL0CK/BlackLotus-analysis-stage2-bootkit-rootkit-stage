@@ -321,7 +321,14 @@ So yeah we see pop rbx and after call we see rbx=0x48
 
 we than call against strlen again on the same string , i guess this is just bc on next line precisly , ```  v6 + v4 * v5; ``` we do v4*v5 which is like i guess some way of having unicode strings i guess
 
-Anyway an than we allocate memory again using gEfiBootServices + 64 which we previously enocuntered which solved to AllocatePool
+Anyway an than we allocate memory again using gEfiBootServices + 64 which we previously enocuntered which solved to AllocatePool.
+
+So here we also see something nice which is 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/c6d60d0e-954e-4e6d-9ab3-98e63b8259f9)
+
+the fact that here the memory block has the pattern afafafaf in it 
+
 
 =============================================================================
 
