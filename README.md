@@ -300,7 +300,16 @@ And translates to this
 
 ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d33dca2e-e5d8-456c-a846-1e7d9d968680)
 
+Cool but this don make no sense if not explained so....
 
+first we have a custom implementation of strlen which we won't dissecc cause it's usless :)
+But here's the result
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4bddf53d-cd3a-4ee4-897d-e325a74ed1e9)
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/c36d8166-1f74-428b-b710-47524702ce52)
+
+32 chars from len(of(str)+"\x00" and than the last 4 bytes appended before the function call 0x4FF7F
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
