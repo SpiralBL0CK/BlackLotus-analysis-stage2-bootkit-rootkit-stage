@@ -353,8 +353,41 @@ And this is how it looks into memory
 
 what is rax? rax is a handle to the image :) don't be dumb like me when i first tought that it is a memory zone :)
 
-Cool before we head in for some more let me quickly explain wtf is winload.efi. so 
+Cool before we head in for some more let me quickly explain wtf is winload.efi. So, ```with the development of computers, the traditional BIOS boot is outdated, and the security confrontation about UEFI boot has started.
+From the flow chart below, we can see that MBR and VBR no longer exist in UEFI, but UEFI itself is responsible for loading bootmgr, which also means safer and faster ```
 
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8962e54d-2017-4b69-aede-0d17ad938b18)
+
+So how does a normal windows pc boots ? After BDS, the UEFI firmware code stored in SPI has completed the work, then the UEFI firmware boot manager first queries the NVRAM UEFI variable to find the ESP, and finds the OS-specific boot manager bootmgfw.efi to call its entry function (DXE driver).
+
+This function will first call the EfiInitCreateInputParametersEx function, which is mainly used to convert the EfiEntry parameter into the parameter format expected by bootmgfw.efi.
+ 
+The Windows Boot Manager entry point BmMain function is then called.
+
+In this function, BmFwInitializeBootDirectoryPath is called to initialize the startup application (BootDirectory) path (\EFI\Microsoft\Boot).
+ 
+Then BootMgr will read the system boot configuration letter (BCD), if there are multiple boot options, it will call BmDisplayGetBootMenuStatus to display the boot menu.
+
+Then it will call the BmpLaunchBootEntry function to start the application (winload.efi).
+ 
+Of course, bootmgfw.efi does more than that, as well as boot policy verification code integrity and initialization of secure boot components, so I won’t go into details.
+
+In the final stage of Windows Boot Manager (BootMgr), the BmpLaunchBootEntry function will select the correct boot entry according to the previous BCD value. If full volume encryption (BitLocker) is enabled, the system partition will be decrypted first, and then the control can be transferred to winload.efi.
+ 
+Next, the BmTransferExecution function is called, the startup options are checked and the execution flow is passed to the BlImgStartBootApplication function.
+ 
+Then the BlImgStartBootApplication function will call the ImgFwStartBootApplication function, and finally call the ImgArchStartBootApplication function. 
+In it, the memory protection mode of winload.efi will be initialized,
+Then call the BlpArchTransferTo64BitApplication function,
+BlpArchTransferTo64BitApplication calls
+The Archpx64TransferTo64BitApplicationAsm function finally hands over control to winload.efi.
+
+This function will enable the new GDT and IDT, and then completely hand over the control to winload.efi. At this point, BootMgr completes its mission and Winload starts to work.
+-End of quotes stolen from a chinese website which talks about this(please review this for more content https://bbs.kanxue.com/thread-268267.htm )
+
+And from there winload.efi does it job which is to load windows and do some more hw work before it hands control to kernel . 
+
+Now after this sort briefing 
 
 =============================================================================
 
