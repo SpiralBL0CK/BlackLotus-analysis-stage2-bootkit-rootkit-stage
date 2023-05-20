@@ -342,6 +342,9 @@ Now after we finish with this we check to see if the device path in our case is 
 Before we finish with this function i would like to point another interesting fact , this is how it looks in memory the bootservice table :) it looks like according to the specs with the begging header just figured it might be interesting to let here for anyone who wanna do feature work and find themselves finding this string BOOTSERVF in a dump, this is deffno bootservice table 
 =============================================================================
 
+
+=============================================================================
+
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/781617af-a1e0-4041-b7c5-7f9b0dcc7998)
 
