@@ -289,7 +289,17 @@ We than append some bytes to get the buffer to look like this
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/85b5591b-9ea5-4b0a-8c23-1bcfdad7a0c5)
 
-And than call a function called FileDevicePath_call
+And than call a function called FileDevicePath_call which looks about like this 
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d1c73955-aa14-47a1-ab17-b805560a989b)
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/bf57fb53-a51d-4178-9c9c-81d2ade48cba)
+![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3323a02c-285c-4d36-894e-41cf79dbe411)
+
+And translates to this 
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/308599ed-ebc7-4649-9e85-7883b65379e0)
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d33dca2e-e5d8-456c-a846-1e7d9d968680)
+
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
