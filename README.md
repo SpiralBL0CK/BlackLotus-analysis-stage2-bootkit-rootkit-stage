@@ -315,6 +315,10 @@ Next we call what i also used from the asian's research blog post PxepDevicePath
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7c91b17e-3fda-4e96-bbfa-ff66af3e0f29)
 
+So yeah we see pop rbx and after call we see rbx=0x48
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/204da595-ad18-4a15-8056-a88b32e34d97)
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
