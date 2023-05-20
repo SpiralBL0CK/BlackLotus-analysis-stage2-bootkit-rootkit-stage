@@ -281,6 +281,10 @@ One interesting fact is that the buffer after allocating it is not zero but rath
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/36c1351c-ad7d-43e4-9792-58ceea64963e)
 
+So yeah anyway we end up calling memcpy after the call our buffer looks like this 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/fa69388b-1cca-403e-a073-4ce8331900d7)
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
