@@ -321,6 +321,8 @@ So yeah we see pop rbx and after call we see rbx=0x48
 
 we than call against strlen again on the same string , i guess this is just bc on next line precisly , ```  v6 + v4 * v5; ``` we do v4*v5 which is like i guess some way of having unicode strings i guess
 
+Anyway an than we allocate memory again using gEfiBootServices + 64 which we previously enocuntered which solved to AllocatePool
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
