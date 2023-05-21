@@ -414,7 +414,17 @@ and we inspect the output image of qemu we get
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/65c8621c-ae99-437e-8699-95ea317f7dfe)
 
-Cool so let's make some sense of this 
+Cool so let's make some sense of this ,i'll refear again to the asian's research blogpost cause honestly i'm lost here
+
+So on his blog he says that the two functions were actually 
+
+```
+ConOut->ClearScreen(ConOut);
+ConOut->OutputString(ConOut, String);
+```
+
+Ok but wtf is conOut? well also he says that conout is of type EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL and that conout is obtained by ```ConOut = gEfiSystemTable->ConOut;``` . ok so what in the code does this mean ?? 
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
