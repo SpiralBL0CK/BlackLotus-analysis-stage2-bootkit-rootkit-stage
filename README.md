@@ -484,7 +484,11 @@ Anything ringing a bell yet ? nah well give it a minute it will sinc it , in the
 
 we see some parsing of an exe :) now idk how much it will be the same as the one from previous part(part1) but let's see :)
 
-so we compare our in memory version of the binary(bootmgfrw.efi) with classical mz header(0x5A4D)
+so we compare our in memory version of the binary(bootmgfrw.efi) with classical mz header(0x5A4D), as you can see
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/800e0d4e-1faf-43a0-b04d-b6c73f9abd8e)
+
+
 
 =============================================================================
 
