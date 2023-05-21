@@ -506,7 +506,9 @@ Anyhow here's sub_180002464
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/06588bc7-c043-436b-a6fb-5ca40580fd18)
 
+If we successfully execute sub_1800024C4 we return in the bigger function and follow a few more checks , cool beans let's mase some sense of these
 
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/99a2be43-6ae7-48ea-a199-1d26fc612239)
 
 =============================================================================
 
