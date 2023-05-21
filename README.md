@@ -399,8 +399,22 @@ Now for the fun lets pretend we fail to analyse that function and we get detecte
 
 ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3daa1149-b650-4eb0-a761-4bf13f909d41)
 
-we see again gEfiSystemTable + 64 which is allocatepool than memcpy
+we see again gEfiSystemTable + 64 which is allocatepool than memcpy and another 3 function call which we don't know 
+now if we run until the loop begins 
 
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/1b920157-282c-4a9f-9f0c-523aa964ad41)
+
+
+and if we inspect previous paramets to memcpy
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/0d7ad630-8ea9-49a0-9ec9-6a9d125c4a59)
+
+
+and we inspect the output image of qemu we get
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/65c8621c-ae99-437e-8699-95ea317f7dfe)
+
+Cool so let's make some sense of this 
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
