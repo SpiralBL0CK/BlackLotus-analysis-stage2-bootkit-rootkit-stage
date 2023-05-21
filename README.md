@@ -482,6 +482,7 @@ Anything ringing a bell yet ? nah well give it a minute it will sinc it , in the
 
 ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/453760be-f468-462e-a3db-eb462468264c)
 
+we see some parsing of an exe :) now idk how much it will be the same as the one from previous part(part1) but let's see :)
 
 =============================================================================
 
