@@ -439,7 +439,9 @@ Now my smart ass forgot to actually capture this in a debugger because first whe
 
 Now what thoese function do?
 
-Well ClearScreen should be pretty self explanatory and so should OutputString too.
+Well ClearScreen should be pretty self explanatory and so should OutputString too. How could the researcher come to the conclusion that that variable is of type EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL? well probably he saw the guid bytes in the debugger.
+
+Now what about the last function ?
 
 
 =============================================================================
