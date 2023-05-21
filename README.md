@@ -488,6 +488,8 @@ so we compare our in memory version of the binary(bootmgfrw.efi) with classical 
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/800e0d4e-1faf-43a0-b04d-b6c73f9abd8e)
 
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/dc1996fc-1b71-41bd-9a29-eb4e1d15d0fc)
+
 
 
 =============================================================================
