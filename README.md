@@ -484,6 +484,8 @@ Anything ringing a bell yet ? nah well give it a minute it will sinc it , in the
 
 we see some parsing of an exe :) now idk how much it will be the same as the one from previous part(part1) but let's see :)
 
+so we compare our in memory version of the binary(bootmgfrw.efi) with classical mz header(0x5A4D)
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
