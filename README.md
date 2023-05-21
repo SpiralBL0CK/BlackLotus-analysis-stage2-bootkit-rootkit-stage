@@ -447,6 +447,11 @@ well in his blogpost he says that last function is gEfiBootServices->Stall ? so 
 
 So basically is makes our cpu freze. cool for how long 0x1C9C380 seconds. a shit tone of time if you ask me. which is again pun in an infite loop so yeah we fucked :)))
 
+And this is how it looks in a debugger 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/cd8367c5-05b5-4534-866a-801745111602)
+
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
