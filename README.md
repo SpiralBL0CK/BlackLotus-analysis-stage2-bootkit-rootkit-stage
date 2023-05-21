@@ -514,6 +514,7 @@ Cool so we further compare whatever is at rax+0xe with 0x64 hmm cool interesting
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7b5f3e08-81b6-463b-8c17-294b2fff4183)
 
+Any special reason behind this specific check? honestly idk? it might be if you know please make a pull request and edit this document
 
 =============================================================================
 
