@@ -490,6 +490,9 @@ so we compare our in memory version of the binary(bootmgfrw.efi) with classical 
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/dc1996fc-1b71-41bd-9a29-eb4e1d15d0fc)
 
+ok next we do another classic check which is if we can find pe header
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4058d60e-acc1-4411-a2db-3017c36427af)
 
 
 =============================================================================
