@@ -392,6 +392,15 @@ Now after this sort briefing as we were saying
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/5cd88999-9608-46bc-98e4-04505fb32cfc)
 
 we further check to see if loading it into memory successeded and than we do a function called ati_analysis_rdtsc_aia_cu_4e1f to which you should be familiar if you have already read the first part of this analysis.
+
+Now for the fun lets pretend we fail to analyse that function and we get detected.Let's see how sub_180002A08 looks like.
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/e1cc8282-62be-4da8-8cb3-c7409161f10e)
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3daa1149-b650-4eb0-a761-4bf13f909d41)
+
+we see again gEfiSystemTable + 64 which is allocatepool than memcpy
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
