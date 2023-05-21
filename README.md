@@ -443,6 +443,9 @@ Well ClearScreen should be pretty self explanatory and so should OutputString to
 
 Now what about the last function ?
 
+well in his blogpost he says that last function is gEfiBootServices->Stall ? so wtf this this do ? . From uefi specs ```The Stall() function stalls execution on the processor for at least the requested number of microseconds. Execution of the processor is not yielded for the duration of the stall.```
+
+So basically is makes our cpu freze. cool for how long 0x1C9C380 seconds. a shit tone of time if you ask me. which is again pun in an infite loop so yeah we fucked :)))
 
 =============================================================================
 
