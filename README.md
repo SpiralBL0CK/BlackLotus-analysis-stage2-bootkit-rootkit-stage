@@ -451,6 +451,9 @@ And this is how it looks in a debugger
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/cd8367c5-05b5-4534-866a-801745111602)
 
+Now continuing with our main function
+
+
 
 =============================================================================
 
