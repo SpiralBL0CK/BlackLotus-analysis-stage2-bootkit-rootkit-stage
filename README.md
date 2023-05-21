@@ -494,6 +494,12 @@ ok next we do another classic check which is if we can find pe header
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4058d60e-acc1-4411-a2db-3017c36427af)
 
+Cool next we call sub_1800024C4() which looks like this 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/fb118a05-9ad3-4854-8405-37f289ffd607)
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/db63719a-d764-462a-b42c-e2e32624cb9c)
+
 
 =============================================================================
 
