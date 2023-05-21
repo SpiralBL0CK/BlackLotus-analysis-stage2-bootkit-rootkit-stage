@@ -399,7 +399,7 @@ Now for the fun lets pretend we fail to analyse that function and we get detecte
 
 ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3daa1149-b650-4eb0-a761-4bf13f909d41)
 
-we see again gEfiSystemTable + 64 which is allocatepool than memcpy and another 3 function call which we don't know 
+we see again gEfiSystemTable + 64 which we actually don't know this time because it's of different type it's not of type bootservices this time is of type efisystemtable than memcpy and another 3 function call which we don't know 
 now if we run until the loop begins 
 
 ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/1b920157-282c-4a9f-9f0c-523aa964ad41)
@@ -424,6 +424,23 @@ ConOut->OutputString(ConOut, String);
 ```
 
 Ok but wtf is conOut? well also he says that conout is of type EFI_SIMPLE_TEXT_OUTPUT_PROTOCOL and that conout is obtained by ```ConOut = gEfiSystemTable->ConOut;``` . ok so what in the code does this mean ?? 
+
+Ok so let's digg in
+
+the deffinition
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/b44929f9-fc5a-49da-92f2-3e593a51bb47)
+
+and the guid
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/6061184e-c695-44a5-b088-c691985edd15)
+
+Now my smart ass forgot to actually capture this in a debugger because first when i anaylsed this i confused the data type between efisystemtable and bootservices and i tought this is actually allocatepool.
+
+Now what thoese function do?
+
+Well ClearScreen should be pretty self explanatory and so should OutputString too.
+
 
 =============================================================================
 
