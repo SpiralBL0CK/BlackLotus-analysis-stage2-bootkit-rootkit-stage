@@ -524,17 +524,5 @@ I wanna stop here for a minute and reference again the previous source of inspir
 
 =============================================================================
 
-For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/781617af-a1e0-4041-b7c5-7f9b0dcc7998)
-
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2961a021-7b43-46e2-afcf-5b0148cb163e)
-
-![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/23fb490c-3918-460f-ab8f-f5f540cdc5ba)
-
-![4](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/984038f9-157f-436f-a7d9-558cf460652a)
-
-![5](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/e761b892-2218-42f0-a62d-b14ee34210cc)
-
-![6](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/0b9dae4d-43ae-4415-9c06-b29de3d7a4f8)
 
 
