@@ -460,6 +460,23 @@ if we manage to load the bootmgfrw.efi(bc winload.efi here is the actual windows
 =============================================================================
 sub_180002538
 
+From a graph perspective
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/5aa56df4-9041-4caa-b664-240c45cdeb2d)
+
+From asm perspective
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d2b372eb-dae2-4d82-9f3d-c797832a7003)
+
+![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/5bbc71cf-21fb-4f1b-8aa3-a27a41424030)
+
+![4](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/47b347ec-d704-4a7a-8b5e-b292fa96fc38)
+
+![5](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/a8e64fa1-494f-46d4-b430-293330699055)
+
+![6](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/575c62d6-e496-47ec-8d6e-5b12b0581a14)
+
+
 =============================================================================
 
 For wayyy later after i learn how to debug this there's a part in the rootkit where it looks for a certain pettern as it can be seen in the images
