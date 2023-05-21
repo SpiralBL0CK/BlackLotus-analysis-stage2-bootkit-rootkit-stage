@@ -500,6 +500,13 @@ Cool next we call sub_1800024C4() which looks like this
 
 ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/db63719a-d764-462a-b42c-e2e32624cb9c)
 
+Cool so what happens here is that we locate certain values in memory and if we found them we return them. Please reffer to a.py for the emulation.
+
+Anyhow here's sub_180002464
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/06588bc7-c043-436b-a6fb-5ca40580fd18)
+
+
 
 =============================================================================
 
