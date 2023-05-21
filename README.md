@@ -453,7 +453,12 @@ And this is how it looks in a debugger
 
 Now continuing with our main function
 
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/618666f5-3cd1-4758-8dc1-b20048088b5c)
 
+if we manage to load the bootmgfrw.efi(bc winload.efi here is the actual windows bootloader) we call sub_180002538
+
+=============================================================================
+sub_180002538
 
 =============================================================================
 
