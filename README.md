@@ -558,6 +558,7 @@ So up next
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/533ff6f9-cf2d-4b6b-ac79-d7a6f8ec12a5)
 
+what dis to is that basically iterate over every resource from directory and checks to see if it's of type string
 
 =============================================================================
 
