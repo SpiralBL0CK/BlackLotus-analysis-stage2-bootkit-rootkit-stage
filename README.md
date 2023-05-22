@@ -544,6 +544,8 @@ Before we further proceed there's one more interesting detail to be explained. I
            } IMAGE_RESOURCE_DIRECTORY_ENTRY, *PIMAGE_RESOURCE_DIRECTORY_ENTRY;
 ```
 
+Now wtf about this structure ?
+
 =============================================================================
 
 
