@@ -560,6 +560,8 @@ So up next
 
 what dis to is that basically iterate over every resource from directory and checks to see if it's of type string
 
+ngl i don't know why he would so if i'm wrong sorry if i'm not cheers!
+
 =============================================================================
 
 
