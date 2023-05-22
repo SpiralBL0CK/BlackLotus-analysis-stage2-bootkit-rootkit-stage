@@ -546,6 +546,13 @@ Before we further proceed there's one more interesting detail to be explained. I
 
 Now wtf about this structure ?
 
+well doing a quick search about that structure gets us here(http://www.brokenthorn.com/Resources/OSDevPE.html) which tells us that  ```Parsing resources is a bit more complex then the other directory types, however. Like the other sections, there is a base IMAGE_RESOURCE_DIRECTORY structure that can be obtained from the DataDirectory member of the optional header: blah blah``` and also that ```This structure doesnt have much of any interesting fields, except the last three.
+
+If you have worked with Win32 resources, you might know that resources can be idenitified by ID or name. Two of the members in this structure will let us know the number of these entries, and the total amount of entries (NumberOfNamedEntries + NumberOfIdEntries), which is useful in looping through all of the entries. As you can probably guess, the entries are in the DirectoryEntries array. DirectoryEntries consists of an array of IMAGE_RESOURCE_DIRECTORY_ENTRY structures, which follow the format:```
+
+so basically this shit is used internally for parsing stuff internally and for us makes sense in the context of the fact that we work with a directory which has resources in it, cool. 
+
+
 =============================================================================
 
 
