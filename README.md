@@ -562,6 +562,11 @@ what dis to is that basically iterate over every resource from directory and che
 
 ngl i don't know why he would so if i'm wrong sorry if i'm not cheers!
 
+next
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8ebdca15-08da-47d9-b0f8-70639e7b8731)
+
+
 =============================================================================
 
 
