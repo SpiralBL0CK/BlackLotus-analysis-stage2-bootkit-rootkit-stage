@@ -552,6 +552,12 @@ If you have worked with Win32 resources, you might know that resources can be id
 
 so basically this shit is used internally for parsing stuff internally and for us makes sense in the context of the fact that we work with a directory which has resources in it, cool. 
 
+More please!
+
+So up next
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/533ff6f9-cf2d-4b6b-ac79-d7a6f8ec12a5)
+
 
 =============================================================================
 
