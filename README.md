@@ -646,7 +646,7 @@ So as a last note on this function, wow amazing engineering
 
 =============================================================================
 
-Now onto next challenge :) based on the output from previous stage we either execute sub_180001D80 or sub_180001D48, as seen
+Now onto next challenge :) based on the output from previous stage we either set v10 to sub_180001D80 or sub_180001D48, as seen
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/296f9f02-3e33-468d-9fd0-a7e0e75bfd92)
 
