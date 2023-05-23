@@ -579,6 +579,7 @@ and repeat same process this time we check for type VS_VERSION_INFO-->1
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2745ecfc-f8c7-4b27-8a3c-0c3654813e06)
 
+so wtf is VS_VERSION_INFO? well microsoft(https://learn.microsoft.com/en-us/windows/win32/menurc/versioninfo-resource) says that ```Defines a version-information resource```, eg i belive is simply says the version of 
 
 =============================================================================
 
