@@ -564,6 +564,13 @@ ngl i don't know why he would so if i'm wrong sorry if i'm not cheers!
 
 next
 
+so what happens here is that we add some offsets and end up to what the chinese researcher says it's second resource table, as you can see
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/211f6b1d-9be2-4dc5-8e6d-122761b24363)
+
+
+and than we repeat same process to get 
+
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8ebdca15-08da-47d9-b0f8-70639e7b8731)
 
 
