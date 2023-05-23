@@ -679,5 +679,10 @@ Cool so wtf does strcmp have to do with ImgArchStartBootApplication? well let's 
 
 And in case we match our in memory image bytes of bootloade with the signature of bytes we execute sub_180002398 
 
+And surely as can be seen we located the pattern we got returned in eax the memory zone where the bytes are and we safely proceed to run sub_180002398
+
 =============================================================================
 
+sub_180002398
+
+=============================================================================
