@@ -670,4 +670,6 @@ I will steal this from ```@_xeroxz```(go follow him, wtf you doing if you not fo
 
 ![1603213912596](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/05243b3f-20d2-4db2-bd7f-1717f3d481cd)
 
+If that was not clear enougn on an article() we see that ```ImgArchStartBootApplication to catch the moment when the Windows OS loader (winload.efi) is loaded in the memory but still has not been executed```(https://rustrepo.com/repo/rusty-bootkit--uefi-bootkit-in-rust)
+
 
