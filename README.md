@@ -654,5 +654,10 @@ and in our case v10=sub_180001D80
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/343d24c7-f05c-4766-a397-357a8973453d)
 
+=============================================================================
+
+We than do a strcmp between 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/58c2af3a-ee6d-4214-a372-5ad3d1b65584)
 
 
