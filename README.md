@@ -585,7 +585,8 @@ and finally if we found VS_VERSION_INFO we repeat same algorithm
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/714cdc22-c053-4ae0-9223-73738a19f7d6)
 
-this time with a twist
+this time with a twist, the twist being that we return the build id :) as we can see 
+
 
 
 =============================================================================
