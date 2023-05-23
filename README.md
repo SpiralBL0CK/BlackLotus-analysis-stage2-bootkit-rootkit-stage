@@ -672,4 +672,5 @@ I will steal this from ```@_xeroxz```(go follow him, wtf you doing if you not fo
 
 If that was not clear enougn on an article() we see that ```ImgArchStartBootApplication to catch the moment when the Windows OS loader (winload.efi) is loaded in the memory but still has not been executed```(https://rustrepo.com/repo/rusty-bootkit--uefi-bootkit-in-rust)
 
+Cool so wtf does strcmp have to do with ImgArchStartBootApplication? well let's take a closer look at ida and we will soon be reveal with the answear
 
