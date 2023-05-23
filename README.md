@@ -661,5 +661,7 @@ We than do a strcmp between our bootloade manager and that array of bytes
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/58c2af3a-ee6d-4214-a372-5ad3d1b65584)
 
 I wanna stop here for a brief short period of time , as you might have guest it i saw something interesting in the chineses researcher blog post. he called the array of btyes SigImgArchStartBootApplication. so wtf is SigImgArchStartBootApplication and to who it belong and why the hack is that array called that way(migos) . So if we search on google(gulugulu)
-for SigImgArchStartBootApplication we get nothing. Now give that the current context we use the bootloader manager of windows let's open it in IDA. We go to C:\Windows\Boot\EFI
+for SigImgArchStartBootApplication we get nothing. Now give that the current context we use the bootloader manager of windows let's open it in IDA. We go to C:\Windows\Boot\EFI, open the binary in ida an search SigImgArchStartBootApplication, nothing. We search for ImgArchStartBootApplication and we are met with 
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3c7a8ed4-8c01-4dcd-8d16-481cac5ffbf3)
 
