@@ -685,4 +685,19 @@ And surely as can be seen we located the pattern we got returned in eax the memo
 
 sub_180002398
 
+"Assembly perspective"
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4260bf70-a0a8-4b72-aeaa-9526ffb01963)
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/59f58d72-8301-44a2-b105-898caaa47605)
+
+"Pseudo-code perspective"
+
+![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/b21d4c73-a63f-4b43-8522-35cf143e3b8b)
+![4](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2098b3f7-4617-4b2d-8566-937fdf817657)
+
+
+
+
+
+
 =============================================================================
