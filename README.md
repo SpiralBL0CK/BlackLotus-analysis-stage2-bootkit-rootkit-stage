@@ -656,7 +656,7 @@ and in our case v10=sub_180001D80
 
 =============================================================================
 
-We than do a strcmp between 
+We than do a strcmp between our bootloade manager and that array of bytes
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/58c2af3a-ee6d-4214-a372-5ad3d1b65584)
 
