@@ -677,5 +677,7 @@ Cool so wtf does strcmp have to do with ImgArchStartBootApplication? well let's 
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/342cab9b-d37f-4598-8b16-9d68b84da7ec)
 
+And in case we match our in memory image bytes of bootloade with the signature of bytes we execute sub_180002398 
 
+=============================================================================
 
