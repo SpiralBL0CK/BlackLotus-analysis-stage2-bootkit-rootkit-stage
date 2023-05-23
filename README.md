@@ -660,4 +660,4 @@ We than do a strcmp between our bootloade manager and that array of bytes
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/58c2af3a-ee6d-4214-a372-5ad3d1b65584)
 
-I wanna stop here for a brief short period of time 
+I wanna stop here for a brief short period of time , as you might have guest it i saw something interesting in the chineses researcher blog post. he called the array of btyes SigImgArchStartBootApplication. so wtf is SigImgArchStartBootApplication and to who it belong and why the hack is that array called that way(migos) 
