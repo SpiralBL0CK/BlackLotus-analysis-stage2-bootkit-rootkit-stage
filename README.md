@@ -646,5 +646,7 @@ So as a last note on this function, wow amazing engineering
 
 =============================================================================
 
+Now onto next challenge :) based on the output from previous stage we either execute sub_180001D80 or sub_180001D48
+
 
 
