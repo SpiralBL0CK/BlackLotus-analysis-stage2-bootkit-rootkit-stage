@@ -650,4 +650,9 @@ Now onto next challenge :) based on the output from previous stage we either set
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/296f9f02-3e33-468d-9fd0-a7e0e75bfd92)
 
+and in our case v10=sub_180001D80
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/343d24c7-f05c-4766-a397-357a8973453d)
+
+
 
