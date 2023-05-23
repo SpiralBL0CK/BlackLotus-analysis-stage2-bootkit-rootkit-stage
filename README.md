@@ -666,5 +666,8 @@ for SigImgArchStartBootApplication we get nothing. Now give that the current con
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3c7a8ed4-8c01-4dcd-8d16-481cac5ffbf3)
 
 So ImgArchStartBootApplication .... what the dog doin... !? Well amm...hh
+I will steal this from ```@_xeroxz```(go follow him, wtf you doing if you not following his work....) so basically in an article he says that ```bootmgfw.ImgArchStartBootApplication between windows versions 2004-1709 is invoked to start winload.efi``` as we can see also from his image(https://guidedhacking.com/threads/hyper-v-hacking-framework-works-on-every-version-of-windows-10-2004-1511-amd-intel.16251/)
+
+![1603213912596](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/05243b3f-20d2-4db2-bd7f-1717f3d481cd)
 
 
