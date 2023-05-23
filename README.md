@@ -665,3 +665,6 @@ for SigImgArchStartBootApplication we get nothing. Now give that the current con
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3c7a8ed4-8c01-4dcd-8d16-481cac5ffbf3)
 
+So ImgArchStartBootApplication .... what the dog doin... !? Well amm...hh
+
+
