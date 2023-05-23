@@ -45,7 +45,37 @@ bootmenupolicy          Standard
 
 ```
 
-But an infected one looks like this 
+Now on my analysis i never managed to infect my machine such i will use the example from the already referenced asian's researcher blog post which this is how it's supposed to look
+an infected one 
+
+```
+    // Windows Boot Manager
+    // --------------------
+    // identifier              {9dea862c-5cdd-4e70-acc1-f32b344d4795}
+    // description             Windows Boot Manager
+    // locale                  en-US
+    // inherit                 {7ea2e1ac-2e61-4728-aaa3-896d9d0a9f0e}
+    // bootdebug               Yes
+    // displayorder            {57e1b615-0355-11ec-abb0-005056c00008}
+    // timeout                 30
+
+    // Windows Boot Loader
+    // -------------------
+    // identifier              {57e1b615-0355-11ec-abb0-005056c00008}
+    // device                  boot
+    // path                    \system32\hvloader.efi
+    // description             Hoy la disco se flota
+    // locale                  en-US
+    // inherit                 {6efb52bf-1766-41db-a6b3-0ee5eff72bd7}
+    // truncatememory          0x10000000
+    // avoidlowmemory          0x1000
+    // nointegritychecks       Yes
+    // testsigning             Yes
+    // isolatedcontext         Yes
+    // osdevice                boot
+    // systemroot              \
+    // ems                     Yes
+```
 
 =============================================================================
 
