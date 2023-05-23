@@ -587,7 +587,26 @@ and finally if we found VS_VERSION_INFO we repeat same algorithm
 
 this time with a twist, the twist being that we return the build id :) as we can see 
 
+So as a conclusion wtf happened here actually ? well based on the name the chinese researcher used(GetPeFileVersionInfo_BuildNumber_) we can conclude that we actauly get build number for bootload 
+as can be seen from the first image 
 
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/66145dae-6a99-48cf-bc88-8f111f217333)
+
+where here we see the loade bootload in memory
+
+in second image we see 
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d9b2b790-0603-44c2-8330-0504a39adf92)
+
+an integer in rcx which could either be build nr or pefileversion
+
+and 3rd image
+
+![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/dd3366d9-53ac-43e1-8f84-732f94a47590)
+
+what we could speculate to be build number as ebx will be moved into rax :)
+
+So as a last note on this function, wow amazing engineering
 
 =============================================================================
 
