@@ -575,6 +575,10 @@ and than we repeat same process to get  some offsets
 
 ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/ce012c6a-a660-4ee0-80c1-c68df17f4406)
 
+and repeat same process this time we check for type VS_VERSION_INFO-->1
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2745ecfc-f8c7-4b27-8a3c-0c3654813e06)
+
 
 =============================================================================
 
