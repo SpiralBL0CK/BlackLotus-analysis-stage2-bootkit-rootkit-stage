@@ -4,7 +4,8 @@ BlackLotus stage 2 bootkit-rootkit analysis
 
 Before we dive into this divine shit(belive me this is some divine shit as nobody can do this withouth GOD's Will(at least that's my opinion on this)) ,here's the hash for the bootkit file 
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/56b4a81c-c4a3-4788-859a-9492d0a76bdb)
+![1]
+https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/56b4a81c-c4a3-4788-859a-9492d0a76bdb
 
 
 Frist things first this is how a healthy system looks like 
