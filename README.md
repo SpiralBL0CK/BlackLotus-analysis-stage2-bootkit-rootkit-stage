@@ -205,7 +205,7 @@ Cool so let's get this party started.
 
  
 
-<figure><img src=".gitbook/assets/1 (13) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (13) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -237,7 +237,7 @@ Cool so let's start dissecating. So first we see that we have a function which g
 
  
 
-<figure><img src=".gitbook/assets/1 (6) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (6) (1) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -273,15 +273,7 @@ Cool another function . Not quite... Notice something familiary ?
 
 </div>
 
-<div>
-
-<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/b675edcc-b7ec-4737-afb3-5cf327bffd83" alt="4">
-
- 
-
-<figure><img src=".gitbook/assets/1 (2) (1).PNG" alt=""><figcaption></figcaption></figure>
-
-</div>
+![4](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/b675edcc-b7ec-4737-afb3-5cf327bffd83)
 
 <div>
 
@@ -329,7 +321,7 @@ So when we demangle the string we get
 
  
 
-<figure><img src=".gitbook/assets/1 (34) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (34) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -353,7 +345,7 @@ and we get no info.... great, but why is that ? bc we don't have a .pdb file so 
 
  
 
-<figure><img src=".gitbook/assets/1 (6) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (6) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -399,7 +391,7 @@ Now is there anything important about these bytes ? well yes, if you by chance h
 
  
 
-<figure><img src=".gitbook/assets/1 (23) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (23) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -451,7 +443,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/1 (36) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (36) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -673,7 +665,7 @@ So yeah anyway we end up calling memcpy after the call our buffer looks like thi
 
  
 
-<figure><img src=".gitbook/assets/1 (37) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (37) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1036,7 +1028,7 @@ From asm perspective
 
  
 
-<figure><img src=".gitbook/assets/1 (34).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (34) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1156,7 +1148,7 @@ Cool next we call sub\_1800024C4() which looks like this
 
  
 
-<figure><img src=".gitbook/assets/1 (19) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (19) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1170,7 +1162,7 @@ Anyhow here's sub\_180002464
 
  
 
-<figure><img src=".gitbook/assets/1 (23).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (23) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1182,7 +1174,7 @@ If we successfully execute sub\_1800024C4 we return in the bigger function and f
 
  
 
-<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (13) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1254,7 +1246,7 @@ So up next
 
  
 
-<figure><img src=".gitbook/assets/2 (23).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (23) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1270,7 +1262,7 @@ next
 
  
 
-<figure><img src=".gitbook/assets/1 (36).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (36) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1320,7 +1312,7 @@ and finally if we found VS\_VERSION\_INFO we repeat same algorithm
 
  
 
-<figure><img src=".gitbook/assets/1 (37).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (37) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1362,7 +1354,7 @@ and 3rd image
 
  
 
-<figure><img src=".gitbook/assets/1 (19).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (19) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1488,12 +1480,28 @@ sub\_180002398
 
 So what the dog doing ? honestly it does some calculation and some additions substractions and nothing rlly important ? why because it's not that interesting . What we interested in is what happens after we return from the function. We see rax
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/b24699a1-99cd-468e-8118-a5a3b8dd9d36)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/b24699a1-99cd-468e-8118-a5a3b8dd9d36" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (36).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ok cool so i still don't get it . Well rax = 0x5eec108 which points to 0x48c48b48 , ok and what ? well i was as confused as you were so i returned once again to the chinese blog. So what that researcher describes it happens here is this: it goes back to the beginning of the ImgArchStartBootApplication function. But how tf did he come up with this ? well as mention earlier rax =\
 0x48c48b48 and if we inspect the booloadermnfr.efi we see
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/03a07352-58a9-4b37-b262-06fb7b3931d9)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/03a07352-58a9-4b37-b262-06fb7b3931d9" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (37).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 which is exactly the same sequence of bytes in 0x5eec108. ok now that's cool :)
 
@@ -1503,25 +1511,73 @@ Please reffer to sub\_180002398.py to see my failed attempt to emulate this beha
 
 Cool next ?
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/24c004c6-0c0f-43aa-b6d0-efdeed935c26)
+<div>
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/28cc6ac2-26ee-4af9-9a2e-734258340b68)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/24c004c6-0c0f-43aa-b6d0-efdeed935c26" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/28cc6ac2-26ee-4af9-9a2e-734258340b68" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (23).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 So what happens next is RaiseTPL . ok so what this do ? Raises the priority of the currently executing task and returns its previous priority level. In our case it will be run as highest execution privillages.
 
 Next we call what i called patch\_something which looks like this
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/1a44fc35-c772-49fd-bec3-6e4a48369e34)
+<div>
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/f279ed31-d5dd-49f7-9940-63d0594d9154)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/1a44fc35-c772-49fd-bec3-6e4a48369e34" alt="1">
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7aaf35f1-5a1e-456d-a834-2c8892c25930)
+ 
+
+<figure><img src=".gitbook/assets/1 (19).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/f279ed31-d5dd-49f7-9940-63d0594d9154" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7aaf35f1-5a1e-456d-a834-2c8892c25930" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (23).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 So from statical analysis we can see this is what it's known as hooking. :) so basically it patches the bytes of ImgArchStartBootApplication to point to sub\_180001D80 and saves original function of ImgArchStartBootApplication to byte\_180015C78
 
 as as we can see it change to exactly sub\_180001D80
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/390e7158-74f3-4a19-8644-218020113efa)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/390e7158-74f3-4a19-8644-218020113efa" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (34).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 next we reset the privilleges and from there we hand the control to boomgrfw.efi :)
 
