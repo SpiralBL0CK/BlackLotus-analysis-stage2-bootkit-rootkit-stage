@@ -714,4 +714,7 @@ Cool next ?
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/24c004c6-0c0f-43aa-b6d0-efdeed935c26)
 
-So what happens next is RaiseTPL
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/28cc6ac2-26ee-4af9-9a2e-734258340b68)
+
+
+So what happens next is RaiseTPL . ok so what this do ?
