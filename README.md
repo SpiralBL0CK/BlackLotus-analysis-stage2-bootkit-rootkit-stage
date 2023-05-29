@@ -129,7 +129,7 @@ also after selecting this you should input gdbserver to start a remeote instance
 
  
 
-<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (15).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -143,7 +143,7 @@ So how do we set up a breakpoint in order to debug the bootkit? Well that's we w
 
  
 
-<figure><img src=".gitbook/assets/1 (17).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (17) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -259,7 +259,7 @@ Cool another function . Not quite... Notice something familiary ?
 
  
 
-<figure><img src=".gitbook/assets/1 (15).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (15) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -303,7 +303,7 @@ No problemo maybe now
 
  
 
-<figure><img src=".gitbook/assets/1 (3).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -313,7 +313,7 @@ No problemo maybe now
 
  
 
-<figure><img src=".gitbook/assets/2 (7).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (8).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -329,7 +329,7 @@ So when we demangle the string we get
 
  
 
-<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (19).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -341,7 +341,7 @@ So next when we end up to the call instruction
 
  
 
-<figure><img src=".gitbook/assets/2 (5).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -353,7 +353,7 @@ and we get no info.... great, but why is that ? bc we don't have a .pdb file so 
 
  
 
-<figure><img src=".gitbook/assets/1 (11).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -367,7 +367,7 @@ So first it demangles VbsPolicyDisable, if we search google we come around eset 
 
  
 
-<figure><img src=".gitbook/assets/2 (4).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (5).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -399,7 +399,7 @@ Now is there anything important about these bytes ? well yes, if you by chance h
 
  
 
-<figure><img src=".gitbook/assets/1 (5).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -415,7 +415,7 @@ Cool next, fortune favours us and the pseudo code from ida is simillar with asse
 
  
 
-<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (7).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -431,7 +431,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/1 (9).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -441,7 +441,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/2 (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2.PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -451,7 +451,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/1 (14).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (20).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -463,7 +463,7 @@ And from pseudo code
 
  
 
-<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (5).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -473,7 +473,7 @@ And from pseudo code
 
  
 
-<figure><img src=".gitbook/assets/2.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -485,7 +485,7 @@ Coll so first function call we see it does is HandleProtocol. So what the code d
 
  
 
-<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (7).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -505,11 +505,11 @@ so wtf does EFI\_LOADED\_IMAGE\_PROTOCOL\_GUID do ? quoting from(https://uefi.or
 
 So in our case grabs info about the bootkit. Now there's a problem we can't rlly inspect the resut of the function bc we have no debug symbols :/ but we can presume. and i tend to presume that the structure(result from previous function call)will be in rbx.
 
-<figure><img src=".gitbook/assets/1 (7).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (11).PNG" alt=""><figcaption></figcaption></figure>
 
 Next we call demangle string
 
-<figure><img src=".gitbook/assets/2 (3).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (4).PNG" alt=""><figcaption></figcaption></figure>
 
 which gets us
 
@@ -519,7 +519,7 @@ which gets us
 
  
 
-<figure><img src=".gitbook/assets/1 (20).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (23).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -531,7 +531,7 @@ and than we call
 
  
 
-<figure><img src=".gitbook/assets/1.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (3).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -539,35 +539,91 @@ and than we call
 
 sub\_180002B14
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4b229ff9-43d3-4e22-90e9-628c8121b27b)
+<div>
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8d84f664-a402-4e78-b17d-55aa31b24cb7)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4b229ff9-43d3-4e22-90e9-628c8121b27b" alt="1">
 
-![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/096bf634-bf22-49ad-b034-909215dc9ecc)
+ 
+
+<figure><img src=".gitbook/assets/1 (9).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8d84f664-a402-4e78-b17d-55aa31b24cb7" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (3).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/096bf634-bf22-49ad-b034-909215dc9ecc" alt="3">
+
+ 
+
+<figure><img src=".gitbook/assets/3.PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 and pseudo code
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/327d9ae9-7813-436b-8cec-c1351dd30ec2)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/327d9ae9-7813-436b-8cec-c1351dd30ec2" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (14).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Cool so until the if everythin's self explanatory,now what about the if? We see again it does a call with unk\_180005010 as parameters which is an array of bytes again, upon further inspection it looks like this
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/89bcca85-cfc0-4b04-b887-9145db35f10e).
+<figure><img src=".gitbook/assets/1.PNG" alt=""><figcaption></figcaption></figure>
 
 Now if we inspect the first bytes again and do a quick search we come around this (https://github.com/theopolis/uefi-firmware-parser/blob/master/uefi\_firmware/guids/efiguids\_ami.py) more precisely this `'EFI_DEVICE_PATH_PROTOCOL_GUID': [0x09576e91, 0x6d3f, 0x11d2, 0x8e, 0x39, 0x00, 0xa0, 0xc9, 0x69, 0x72, 0x3b]` .
 
 If we go again on uefi's spec page we see that `Can be used on any device handle to obtain generic path/location information concerning the physical device or logical device.`. Coon we also se more like this `The device path describes the location of the device the handle is for`. OK cool and if we scroll just a little we see a function called \_EFI\_DEVICE\_PATH\_PROTOCOL. Ok so to conclude we know this this has ti di with EFI\_DEVICE\_PATH\_PROTOCOL\_GUID but our function is of type EFI\_BOOT\_SERVICES. So is there any function in EFI\_BOOT\_SERVICES which could do something like handling a protocol ? yes there is . If we inspect https://www.intel.com/content/dam/doc/product-specification/efi-v1-10-specification.pdf section 4.4 we see
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/dbcbb1a1-9ce7-46b8-abe2-18cc9da0b5fc)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/dbcbb1a1-9ce7-46b8-abe2-18cc9da0b5fc" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (17).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 more precisely it has a function to which we are familiar(HandleProtocol). Cool
 
 Next we see another function call unkow this time to us. Let's see what arguments it takes, So it take 2,than len of passed string as unicode , and ptr to a variable
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2db35acb-9e5b-49ba-903c-0d46ad77dbe5)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2db35acb-9e5b-49ba-903c-0d46ad77dbe5" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (22).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Now if we inspect this in a debugger
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/0fa822bc-c19b-494c-a63c-3c6e6f39317c)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/0fa822bc-c19b-494c-a63c-3c6e6f39317c" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (21).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 we see a weird thing rcx has a debug string which AllocatePool, which comes after a function call so we conclude that this was possible a call to AllocatePool, funny enough if you also inspect the specs you'll see that boot\_services also has a ptr to AllocatePool which only makes our assumption stronger.
 
