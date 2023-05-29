@@ -695,9 +695,15 @@ sub_180002398
 ![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/b21d4c73-a63f-4b43-8522-35cf143e3b8b)
 ![4](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2098b3f7-4617-4b2d-8566-937fdf817657)
 
+So what the dog doing ? honestly it does some calculation and some additions substractions and nothing rlly important ? why because it's not that interesting . What we interested in is what happens after we return from the function. We see rax 
 
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/b24699a1-99cd-468e-8118-a5a3b8dd9d36)
 
+ok cool so i still don't get it . Well rax = 0x5eec108 which points to 0x48c48b48 , ok and what ? well i was as confused as you were so i returned once again to the chinese blog. So what that researcher describes it happens here is this: it goes back to the beginning of the ImgArchStartBootApplication function. But how tf did he come up with this ? well as mention earlier rax =  
+0x48c48b48 and if we inspect the booloadermnfr.efi we see 
 
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/03a07352-58a9-4b37-b262-06fb7b3931d9)
 
+which is exactly the same sequence of bytes in 0x5eec108. ok now that's cool :)
 
 =============================================================================
