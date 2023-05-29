@@ -84,7 +84,7 @@ an infected one
 ```
 
 =============================================================================
-
+=============================================================================
 
 
 Before we get started how does one setup the environment for the analysis of an efi module anyway ?
