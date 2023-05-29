@@ -728,4 +728,5 @@ Next we call what i called patch_something which looks like this
 
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7aaf35f1-5a1e-456d-a834-2c8892c25930)
 
+So from statical analysis we can see this is what it's known as hooking. :) so basically it patches the bytes of ImgArchStartBootApplication to point to sub_180001D80 and saves original function of ImgArchStartBootApplication to byte_180015C78
 
