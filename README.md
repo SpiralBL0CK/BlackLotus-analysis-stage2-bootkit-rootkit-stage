@@ -32,7 +32,7 @@ Frist things first this is how a healthy system looks like
 
  
 
-<figure><img src=".gitbook/assets/1 (16).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (16) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -159,7 +159,7 @@ Bindiffing the original winload.efi with the one dropped by the blacklotus
 
  
 
-<figure><img src=".gitbook/assets/1 (5) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (5) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -179,7 +179,7 @@ Bindiffing the original winload.efi with the one dropped by the blacklotus
 
  
 
-<figure><img src=".gitbook/assets/1 (18).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (18) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -399,7 +399,7 @@ Now is there anything important about these bytes ? well yes, if you by chance h
 
  
 
-<figure><img src=".gitbook/assets/1 (23).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (23) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -431,7 +431,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/1 (5).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (5) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -451,7 +451,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/1 (36).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (36) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -621,7 +621,7 @@ Now if we inspect this in a debugger
 
  
 
-<figure><img src=".gitbook/assets/1 (38).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (38) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -661,7 +661,7 @@ One interesting fact is that the buffer after allocating it is not zero but rath
 
  
 
-<figure><img src=".gitbook/assets/1 (29).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (29) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -673,7 +673,7 @@ So yeah anyway we end up calling memcpy after the call our buffer looks like thi
 
  
 
-<figure><img src=".gitbook/assets/1 (37).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (37) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -685,7 +685,7 @@ We than append some bytes to get the buffer to look like this
 
  
 
-<figure><img src=".gitbook/assets/2 (12).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (12) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -996,7 +996,7 @@ And this is how it looks in a debugger
 
  
 
-<figure><img src=".gitbook/assets/1 (26).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (26) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1024,7 +1024,7 @@ From a graph perspective
 
  
 
-<figure><img src=".gitbook/assets/1 (15).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (26).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1036,7 +1036,7 @@ From asm perspective
 
  
 
-<figure><img src=".gitbook/assets/1 (31).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (34).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1088,7 +1088,7 @@ Anything ringing a bell yet ? nah well give it a minute it will sinc it , in the
 
  
 
-<figure><img src=".gitbook/assets/1 (41).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (42).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1112,7 +1112,7 @@ so we compare our in memory version of the binary(bootmgfrw.efi) with classical 
 
  
 
-<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (38).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1122,7 +1122,7 @@ so we compare our in memory version of the binary(bootmgfrw.efi) with classical 
 
  
 
-<figure><img src=".gitbook/assets/2 (21).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (20).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1134,7 +1134,7 @@ ok next we do another classic check which is if we can find pe header
 
  
 
-<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (18).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1156,7 +1156,7 @@ Cool next we call sub\_1800024C4() which looks like this
 
  
 
-<figure><img src=".gitbook/assets/1 (20).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (19).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1170,7 +1170,7 @@ Anyhow here's sub\_180002464
 
  
 
-<figure><img src=".gitbook/assets/1 (42).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (23).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1182,7 +1182,7 @@ If we successfully execute sub\_1800024C4 we return in the bigger function and f
 
  
 
-<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1194,7 +1194,7 @@ Cool so we further compare whatever is at rax+0xe with 0x64 hmm cool interesting
 
  
 
-<figure><img src=".gitbook/assets/2 (20).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (33).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1270,7 +1270,7 @@ next
 
  
 
-<figure><img src=".gitbook/assets/1 (33).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (36).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1282,7 +1282,7 @@ so what happens here is that we add some offsets and end up to what the chinese 
 
  
 
-<figure><img src=".gitbook/assets/2 (22).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (15).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1294,7 +1294,7 @@ and than we repeat same process to get some offsets
 
  
 
-<figure><img src=".gitbook/assets/1 (8).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (11).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1320,7 +1320,7 @@ and finally if we found VS\_VERSION\_INFO we repeat same algorithm
 
  
 
-<figure><img src=".gitbook/assets/1 (34).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (37).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1334,7 +1334,7 @@ So as a conclusion wtf happened here actually ? well based on the name the chine
 
  
 
-<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1342,7 +1342,15 @@ where here we see the loade bootload in memory
 
 in second image we see
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d9b2b790-0603-44c2-8330-0504a39adf92)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d9b2b790-0603-44c2-8330-0504a39adf92" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (41).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 an integer in rcx which could either be build nr or pefileversion
 
