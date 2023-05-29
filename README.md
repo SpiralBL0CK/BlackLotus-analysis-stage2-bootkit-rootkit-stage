@@ -720,4 +720,12 @@ Cool next ?
 So what happens next is RaiseTPL . ok so what this do ?  Raises the priority of the currently executing task and returns its previous priority level.
 In our case it will be run as highest execution privillages.
 
-Next we call what i called patch_something
+Next we call what i called patch_something which looks like this
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/1a44fc35-c772-49fd-bec3-6e4a48369e34)
+
+![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/f279ed31-d5dd-49f7-9940-63d0594d9154)
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7aaf35f1-5a1e-456d-a834-2c8892c25930)
+
+
