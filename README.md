@@ -22,7 +22,7 @@ Frist things first this is how a healthy system looks like
 
  
 
-<figure><img src=".gitbook/assets/1 (11).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (11) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -129,7 +129,7 @@ also after selecting this you should input gdbserver to start a remeote instance
 
  
 
-<figure><img src=".gitbook/assets/1 (27).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (30).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -215,7 +215,7 @@ Cool so let's get this party started.
 
  
 
-<figure><img src=".gitbook/assets/1 (7).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (7) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -303,7 +303,7 @@ No problemo maybe now
 
  
 
-<figure><img src=".gitbook/assets/1 (20).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (22).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -313,7 +313,7 @@ No problemo maybe now
 
  
 
-<figure><img src=".gitbook/assets/2 (14).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (20).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -329,7 +329,7 @@ So when we demangle the string we get
 
  
 
-<figure><img src=".gitbook/assets/1 (29).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (34).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -341,7 +341,7 @@ So next when we end up to the call instruction
 
  
 
-<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (9).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -353,7 +353,7 @@ and we get no info.... great, but why is that ? bc we don't have a .pdb file so 
 
  
 
-<figure><img src=".gitbook/assets/1 (5).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -367,7 +367,7 @@ So first it demangles VbsPolicyDisable, if we search google we come around eset 
 
  
 
-<figure><img src=".gitbook/assets/2 (5).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (7).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -399,7 +399,7 @@ Now is there anything important about these bytes ? well yes, if you by chance h
 
  
 
-<figure><img src=".gitbook/assets/1 (21).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (23).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -415,7 +415,7 @@ Cool next, fortune favours us and the pseudo code from ida is simillar with asse
 
  
 
-<figure><img src=".gitbook/assets/2 (7).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (11).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -431,7 +431,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (5).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -451,7 +451,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/1 (31).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (36).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -463,7 +463,7 @@ And from pseudo code
 
  
 
-<figure><img src=".gitbook/assets/1 (2).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (3).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -473,7 +473,7 @@ And from pseudo code
 
  
 
-<figure><img src=".gitbook/assets/2 (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (3).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -485,7 +485,7 @@ Coll so first function call we see it does is HandleProtocol. So what the code d
 
  
 
-<figure><img src=".gitbook/assets/1 (23).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (25).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -497,7 +497,7 @@ If we search for that specifc bytes we come across this
 
  
 
-<figure><img src=".gitbook/assets/2 (3).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (4).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -505,11 +505,11 @@ so wtf does EFI\_LOADED\_IMAGE\_PROTOCOL\_GUID do ? quoting from(https://uefi.or
 
 So in our case grabs info about the bootkit. Now there's a problem we can't rlly inspect the resut of the function bc we have no debug symbols :/ but we can presume. and i tend to presume that the structure(result from previous function call)will be in rbx.
 
-<figure><img src=".gitbook/assets/1 (24).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (27).PNG" alt=""><figcaption></figcaption></figure>
 
 Next we call demangle string
 
-<figure><img src=".gitbook/assets/2 (4).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
 
 which gets us
 
@@ -519,7 +519,7 @@ which gets us
 
  
 
-<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (15).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -531,7 +531,7 @@ and than we call
 
  
 
-<figure><img src=".gitbook/assets/1.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (2).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -545,7 +545,7 @@ sub\_180002B14
 
  
 
-<figure><img src=".gitbook/assets/1 (3).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -555,7 +555,7 @@ sub\_180002B14
 
  
 
-<figure><img src=".gitbook/assets/2 (12).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (18).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -577,13 +577,13 @@ and pseudo code
 
  
 
-<figure><img src=".gitbook/assets/1 (25).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (28).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 Cool so until the if everythin's self explanatory,now what about the if? We see again it does a call with unk\_180005010 as parameters which is an array of bytes again, upon further inspection it looks like this
 
-<figure><img src=".gitbook/assets/1 (19).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (20).PNG" alt=""><figcaption></figcaption></figure>
 
 Now if we inspect the first bytes again and do a quick search we come around this (https://github.com/theopolis/uefi-firmware-parser/blob/master/uefi\_firmware/guids/efiguids\_ami.py) more precisely this `'EFI_DEVICE_PATH_PROTOCOL_GUID': [0x09576e91, 0x6d3f, 0x11d2, 0x8e, 0x39, 0x00, 0xa0, 0xc9, 0x69, 0x72, 0x3b]` .
 
@@ -595,7 +595,7 @@ If we go again on uefi's spec page we see that `Can be used on any device handle
 
  
 
-<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (10).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -609,7 +609,7 @@ Next we see another function call unkow this time to us. Let's see what argument
 
  
 
-<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -621,7 +621,7 @@ Now if we inspect this in a debugger
 
  
 
-<figure><img src=".gitbook/assets/1 (33).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (38).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -635,7 +635,7 @@ Cool so if we manage to allocate enough space(the check if >= 0 is to check if w
 
  
 
-<figure><img src=".gitbook/assets/1 (30).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (35).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -647,7 +647,7 @@ it's only safe to assume
 
  
 
-<figure><img src=".gitbook/assets/2 (13).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (19).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -661,7 +661,7 @@ One interesting fact is that the buffer after allocating it is not zero but rath
 
  
 
-<figure><img src=".gitbook/assets/1 (26).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (29).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -673,7 +673,7 @@ So yeah anyway we end up calling memcpy after the call our buffer looks like thi
 
  
 
-<figure><img src=".gitbook/assets/1 (32).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (37).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -685,13 +685,13 @@ We than append some bytes to get the buffer to look like this
 
  
 
-<figure><img src=".gitbook/assets/2 (8).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (12).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 And than call a function called FileDevicePath\_call which looks about like this&#x20;
 
-<figure><img src=".gitbook/assets/1 (9).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (11).PNG" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/3.PNG" alt=""><figcaption></figcaption></figure>
 
@@ -703,7 +703,7 @@ And translates to this
 
  
 
-<figure><img src=".gitbook/assets/2 (9).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (15).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -717,7 +717,7 @@ first we have a custom implementation of strlen which we won't dissecc cause it'
 
  
 
-<figure><img src=".gitbook/assets/1 (22).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (24).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -727,7 +727,7 @@ first we have a custom implementation of strlen which we won't dissecc cause it'
 
  
 
-<figure><img src=".gitbook/assets/2 (10).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (16).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -741,7 +741,7 @@ Next we call what i also used from the asian's research blog post PxepDevicePath
 
  
 
-<figure><img src=".gitbook/assets/1 (10).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -769,7 +769,7 @@ So here we also see something nice which is
 
  
 
-<figure><img src=".gitbook/assets/1 (34).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (39).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -783,7 +783,7 @@ So what happens next is that we get two buffer which look like this after the ma
 
  
 
-<figure><img src=".gitbook/assets/2 (11).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (17).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -807,17 +807,41 @@ Before we finish with this function i would like to point another interesting fa
 
 Right so what happens next ??? well we check to see if we managed to locate the winload.efi file and we load it into memory. this is the pseudo code :)
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/c8dbffda-1779-4f26-9780-e6e1d1039193)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/c8dbffda-1779-4f26-9780-e6e1d1039193" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (21).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 And this is how it looks into memory
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/318b0fa6-62cd-42fc-8a00-748cca29885f)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/318b0fa6-62cd-42fc-8a00-748cca29885f" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (13).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 what is rax? rax is a handle to the image :) don't be dumb like me when i first tought that it is a memory zone :)
 
 Cool before we head in for some more let me quickly explain wtf is winload.efi. So, `with the development of computers, the traditional BIOS boot is outdated, and the security confrontation about UEFI boot has started. From the flow chart below, we can see that MBR and VBR no longer exist in UEFI, but UEFI itself is responsible for loading bootmgr, which also means safer and faster`
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8962e54d-2017-4b69-aede-0d17ad938b18)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8962e54d-2017-4b69-aede-0d17ad938b18" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (33).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 So how does a normal windows pc boots ? After BDS, the UEFI firmware code stored in SPI has completed the work, then the UEFI firmware boot manager first queries the NVRAM UEFI variable to find the ESP, and finds the OS-specific boot manager bootmgfw.efi to call its entry function (DXE driver).
 
@@ -845,27 +869,75 @@ And from there winload.efi does it job which is to load windows and do some more
 
 Now after this sort briefing as we were saying
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/5cd88999-9608-46bc-98e4-04505fb32cfc)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/5cd88999-9608-46bc-98e4-04505fb32cfc" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (10).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 we further check to see if loading it into memory successeded and than we do a function called ati\_analysis\_rdtsc\_aia\_cu\_4e1f to which you should be familiar if you have already read the first part of this analysis.
 
 Now for the fun lets pretend we fail to analyse that function and we get detected.Let's see how sub\_180002A08 looks like.
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/e1cc8282-62be-4da8-8cb3-c7409161f10e)
+<div>
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3daa1149-b650-4eb0-a761-4bf13f909d41)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/e1cc8282-62be-4da8-8cb3-c7409161f10e" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (31).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3daa1149-b650-4eb0-a761-4bf13f909d41" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (5).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 we see again gEfiSystemTable + 64 which we actually don't know this time because it's of different type it's not of type bootservices this time is of type efisystemtable than memcpy and another 3 function call which we don't know now if we run until the loop begins
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/1b920157-282c-4a9f-9f0c-523aa964ad41)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/1b920157-282c-4a9f-9f0c-523aa964ad41" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (7).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 and if we inspect previous paramets to memcpy
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/0d7ad630-8ea9-49a0-9ec9-6a9d125c4a59)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/0d7ad630-8ea9-49a0-9ec9-6a9d125c4a59" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (8).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 and we inspect the output image of qemu we get
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/65c8621c-ae99-437e-8699-95ea317f7dfe)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/65c8621c-ae99-437e-8699-95ea317f7dfe" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (9).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Cool so let's make some sense of this ,i'll refear again to the asian's research blogpost cause honestly i'm lost here
 
@@ -882,11 +954,27 @@ Ok so let's digg in
 
 the deffinition
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/b44929f9-fc5a-49da-92f2-3e593a51bb47)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/b44929f9-fc5a-49da-92f2-3e593a51bb47" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1.PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 and the guid
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/6061184e-c695-44a5-b088-c691985edd15)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/6061184e-c695-44a5-b088-c691985edd15" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (14).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Now my smart ass forgot to actually capture this in a debugger because first when i anaylsed this i confused the data type between efisystemtable and bootservices and i tought this is actually allocatepool.
 
@@ -902,11 +990,27 @@ So basically is makes our cpu freze. cool for how long 0x1C9C380 seconds. a shit
 
 And this is how it looks in a debugger
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/cd8367c5-05b5-4534-866a-801745111602)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/cd8367c5-05b5-4534-866a-801745111602" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (26).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Now continuing with our main function
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/618666f5-3cd1-4758-8dc1-b20048088b5c)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/618666f5-3cd1-4758-8dc1-b20048088b5c" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (1).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 if we manage to load the bootmgfrw.efi(bc winload.efi here is the actual windows bootloader) we call sub\_180002538
 
