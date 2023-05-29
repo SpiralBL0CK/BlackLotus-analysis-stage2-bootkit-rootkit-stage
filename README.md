@@ -736,6 +736,9 @@ as as we can see it change to exactly sub_180001D80
 
 next we reset the privilleges and from there we hand the control to boomgrfw.efi :)
 
+So this officially marks the first half of the analysis done :) next part we will learn how to further debug sub_180001D80 and  boomgrfw.efi(in our case winload.efi)
+So please sit thight till i learn how to prepare the environment for the second part of the analysis
+
 =============================================================================
 
 Now for the second half of the analysis.... 
