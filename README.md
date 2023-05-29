@@ -706,4 +706,12 @@ ok cool so i still don't get it . Well rax = 0x5eec108 which points to 0x48c48b4
 
 which is exactly the same sequence of bytes in 0x5eec108. ok now that's cool :)
 
+Please reffer to sub_180002398.py to see my failed attempt to emulate this behaviour :)
+
 =============================================================================
+
+Cool next ?
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/24c004c6-0c0f-43aa-b6d0-efdeed935c26)
+
+So what happens next is RaiseTPL
