@@ -179,7 +179,7 @@ Bindiffing the original winload.efi with the one dropped by the blacklotus
 
  
 
-<figure><img src=".gitbook/assets/1 (18) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (18) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -189,7 +189,7 @@ Bindiffing the original winload.efi with the one dropped by the blacklotus
 
  
 
-<figure><img src=".gitbook/assets/1 (12) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (12) (1) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -269,7 +269,7 @@ Cool another function . Not quite... Notice something familiary ?
 
  
 
-<figure><img src=".gitbook/assets/1 (4) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (4) (1) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -415,7 +415,7 @@ Cool next, fortune favours us and the pseudo code from ida is simillar with asse
 
  
 
-<figure><img src=".gitbook/assets/2 (11) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (11) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -545,7 +545,7 @@ sub\_180002B14
 
  
 
-<figure><img src=".gitbook/assets/1 (4) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (4) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -583,7 +583,7 @@ and pseudo code
 
 Cool so until the if everythin's self explanatory,now what about the if? We see again it does a call with unk\_180005010 as parameters which is an array of bytes again, upon further inspection it looks like this
 
-<figure><img src=".gitbook/assets/1 (20) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (20) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 Now if we inspect the first bytes again and do a quick search we come around this (https://github.com/theopolis/uefi-firmware-parser/blob/master/uefi\_firmware/guids/efiguids\_ami.py) more precisely this `'EFI_DEVICE_PATH_PROTOCOL_GUID': [0x09576e91, 0x6d3f, 0x11d2, 0x8e, 0x39, 0x00, 0xa0, 0xc9, 0x69, 0x72, 0x3b]` .
 
@@ -661,7 +661,7 @@ One interesting fact is that the buffer after allocating it is not zero but rath
 
  
 
-<figure><img src=".gitbook/assets/1 (29) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (29) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -693,7 +693,7 @@ And than call a function called FileDevicePath\_call which looks about like this
 
 <figure><img src=".gitbook/assets/1 (11).PNG" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/3 (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/3 (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 And translates to this
 
@@ -727,7 +727,7 @@ first we have a custom implementation of strlen which we won't dissecc cause it'
 
  
 
-<figure><img src=".gitbook/assets/2 (16).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (16) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -741,7 +741,7 @@ Next we call what i also used from the asian's research blog post PxepDevicePath
 
  
 
-<figure><img src=".gitbook/assets/1 (12) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (12) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -825,7 +825,7 @@ And this is how it looks into memory
 
  
 
-<figure><img src=".gitbook/assets/2 (13).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (13) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -923,7 +923,7 @@ and if we inspect previous paramets to memcpy
 
  
 
-<figure><img src=".gitbook/assets/2 (8) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (8) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1046,7 +1046,7 @@ From asm perspective
 
  
 
-<figure><img src=".gitbook/assets/2 (8).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (8) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1088,7 +1088,7 @@ Anything ringing a bell yet ? nah well give it a minute it will sinc it , in the
 
  
 
-<figure><img src=".gitbook/assets/1 (42).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (42) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1134,7 +1134,7 @@ ok next we do another classic check which is if we can find pe header
 
  
 
-<figure><img src=".gitbook/assets/1 (18).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (18) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1156,7 +1156,7 @@ Cool next we call sub\_1800024C4() which looks like this
 
  
 
-<figure><img src=".gitbook/assets/1 (19).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (19) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1208,7 +1208,7 @@ we do some more addition and than a comparison
 
  
 
-<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (4) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1294,7 +1294,7 @@ and than we repeat same process to get some offsets
 
  
 
-<figure><img src=".gitbook/assets/2 (11).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (11) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1334,7 +1334,7 @@ So as a conclusion wtf happened here actually ? well based on the name the chine
 
  
 
-<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (12) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1356,7 +1356,15 @@ an integer in rcx which could either be build nr or pefileversion
 
 and 3rd image
 
-![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/dd3366d9-53ac-43e1-8f84-732f94a47590)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/dd3366d9-53ac-43e1-8f84-732f94a47590" alt="3">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (19).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 what we could speculate to be build number as ebx will be moved into rax :)
 
@@ -1366,31 +1374,79 @@ So as a last note on this function, wow amazing engineering
 
 Now onto next challenge :) based on the output from previous stage we either set v10 to sub\_180001D80 or sub\_180001D48, as seen
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/296f9f02-3e33-468d-9fd0-a7e0e75bfd92)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/296f9f02-3e33-468d-9fd0-a7e0e75bfd92" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (11).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 and in our case v10=sub\_180001D80
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/343d24c7-f05c-4766-a397-357a8973453d)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/343d24c7-f05c-4766-a397-357a8973453d" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 \=============================================================================
 
 We than do a strcmp between our bootloade manager and that array of bytes
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/58c2af3a-ee6d-4214-a372-5ad3d1b65584)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/58c2af3a-ee6d-4214-a372-5ad3d1b65584" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (42).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 I wanna stop here for a brief short period of time , as you might have guest it i saw something interesting in the chineses researcher blog post. he called the array of btyes SigImgArchStartBootApplication. so wtf is SigImgArchStartBootApplication and to who it belong and why the hack is that array called that way(migos) . So if we search on google(gulugulu) for SigImgArchStartBootApplication we get nothing. Now give that the current context we use the bootloader manager of windows let's open it in IDA. We go to C:\Windows\Boot\EFI, open the binary in ida an search SigImgArchStartBootApplication, nothing. We search for ImgArchStartBootApplication and we are met with
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3c7a8ed4-8c01-4dcd-8d16-481cac5ffbf3)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3c7a8ed4-8c01-4dcd-8d16-481cac5ffbf3" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (8).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 So ImgArchStartBootApplication .... what the dog doin... !? Well amm...hh I will steal this from `@_xeroxz`(go follow him, wtf you doing if you not following his work....) so basically in an article he says that `bootmgfw.ImgArchStartBootApplication between windows versions 2004-1709 is invoked to start winload.efi` as we can see also from his image(https://guidedhacking.com/threads/hyper-v-hacking-framework-works-on-every-version-of-windows-10-2004-1511-amd-intel.16251/)
 
-![1603213912596](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/05243b3f-20d2-4db2-bd7f-1717f3d481cd)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/05243b3f-20d2-4db2-bd7f-1717f3d481cd" alt="1603213912596">
+
+ 
+
+<figure><img src=".gitbook/assets/1603213912596.jpg" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 If that was not clear enougn on an article() we see that `ImgArchStartBootApplication to catch the moment when the Windows OS loader (winload.efi) is loaded in the memory but still has not been executed`(https://rustrepo.com/repo/rusty-bootkit--uefi-bootkit-in-rust)
 
 Cool so wtf does strcmp have to do with ImgArchStartBootApplication? well let's take a closer look at ida and we will soon be reveal with the answear, if we search in bootloader code for bytes 41 b8 09 we are soon meet with the coolprit
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/342cab9b-d37f-4598-8b16-9d68b84da7ec)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/342cab9b-d37f-4598-8b16-9d68b84da7ec" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (29).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 And in case we match our in memory image bytes of bootloade with the signature of bytes we execute sub\_180002398
 
@@ -1402,11 +1458,33 @@ sub\_180002398
 
 "Assembly perspective"
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4260bf70-a0a8-4b72-aeaa-9526ffb01963) ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/59f58d72-8301-44a2-b105-898caaa47605)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4260bf70-a0a8-4b72-aeaa-9526ffb01963" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<figure><img src=".gitbook/assets/2 (16).PNG" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/3 (1).PNG" alt=""><figcaption></figcaption></figure>
 
 "Pseudo-code perspective"
 
-![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/b21d4c73-a63f-4b43-8522-35cf143e3b8b) ![4](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2098b3f7-4617-4b2d-8566-937fdf817657)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/b21d4c73-a63f-4b43-8522-35cf143e3b8b" alt="3">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (20).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<figure><img src=".gitbook/assets/2 (13).PNG" alt=""><figcaption></figcaption></figure>
 
 So what the dog doing ? honestly it does some calculation and some additions substractions and nothing rlly important ? why because it's not that interesting . What we interested in is what happens after we return from the function. We see rax
 
