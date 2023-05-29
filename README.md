@@ -85,7 +85,7 @@ an infected one
 
 =============================================================================
 
-=============================================================================
+
 
 Before we get started how does one setup the environment for the analysis of an efi module anyway ?
 Well courtesy goes to @MaverickMusic__ , during a disscussion with him he handed me this( ```https://zhuanlan-zhihu-com.translate.goog/p/343293521?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-GB``` ). 
