@@ -730,3 +730,14 @@ Next we call what i called patch_something which looks like this
 
 So from statical analysis we can see this is what it's known as hooking. :) so basically it patches the bytes of ImgArchStartBootApplication to point to sub_180001D80 and saves original function of ImgArchStartBootApplication to byte_180015C78
 
+as as we can see it change to exactly sub_180001D80
+
+![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/390e7158-74f3-4a19-8644-218020113efa)
+
+next we reset the privilleges and from there we hand the control to boomgrfw.efi :)
+
+=============================================================================
+
+Now for the second half of the analysis.... 
+How to do we debug boomgrfw.efi ?
+
