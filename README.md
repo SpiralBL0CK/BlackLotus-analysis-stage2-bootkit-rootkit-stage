@@ -22,7 +22,7 @@ Frist things first this is how a healthy system looks like
 
  
 
-<figure><img src=".gitbook/assets/1 (11).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (11) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -129,7 +129,7 @@ also after selecting this you should input gdbserver to start a remeote instance
 
  
 
-<figure><img src=".gitbook/assets/1.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (9).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -159,7 +159,7 @@ Bindiffing the original winload.efi with the one dropped by the blacklotus
 
  
 
-<figure><img src=".gitbook/assets/1 (5).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (5) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -169,7 +169,7 @@ Bindiffing the original winload.efi with the one dropped by the blacklotus
 
  
 
-<figure><img src=".gitbook/assets/1 (9).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (9) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -189,7 +189,7 @@ Bindiffing the original winload.efi with the one dropped by the blacklotus
 
  
 
-<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (12) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -215,7 +215,7 @@ Cool so let's get this party started.
 
  
 
-<figure><img src=".gitbook/assets/1 (7).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (7) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -237,7 +237,7 @@ Cool so let's start dissecating. So first we see that we have a function which g
 
  
 
-<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (6) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -249,7 +249,7 @@ Cool another function . Not quite... Notice something familiary ?
 
  
 
-<figure><img src=".gitbook/assets/1 (3).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (3) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -269,7 +269,7 @@ Cool another function . Not quite... Notice something familiary ?
 
  
 
-<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (4) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -297,9 +297,25 @@ Nothing yet???
 
 No problemo maybe now
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2becee86-c848-4505-b522-b9ff9969edf0)
+<div>
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/eb196e09-90bf-41a1-9df6-ace8585cb6ab)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2becee86-c848-4505-b522-b9ff9969edf0" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1.PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/eb196e09-90bf-41a1-9df6-ace8585cb6ab" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Same demangle function! Hi there old friend :)))
 
@@ -307,21 +323,53 @@ Cool but what about `return (*(a1 + 88))(v2, &unk_62CEABC, 3i64);` ?? Well hones
 
 So when we demangle the string we get
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/071d7748-85e0-4d69-b466-f77048d9b66e)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/071d7748-85e0-4d69-b466-f77048d9b66e" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (11).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 So next when we end up to the call instruction
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/93c01e2a-86b0-4ba6-ae7c-899fb7aba5ac)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/93c01e2a-86b0-4ba6-ae7c-899fb7aba5ac" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (4).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 and we get no info.... great, but why is that ? bc we don't have a .pdb file so we can get debug symbols.... Cool at least ida is helpfull here. So we know that the "grand" function takes as input SystemTable->RuntimeServices, which is of type EFI\_SYSTEM\_TABLE. Cool if we inspect it this is a `A pointer to the EFI Runtime Services Table.` . if we search around googler we come around a bunch of docs but one crucial doc we come around is https://uefi.org/sites/default/files/resources/UEFI\_Spec\_2\_1\_D.pdf . there is says
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/6802517e-b815-40f5-88cd-3df8899baf0a)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/6802517e-b815-40f5-88cd-3df8899baf0a" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (7).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Cool so a struct with bunch of pointers, ye, but let's zoom in more.
 
 So first it demangles VbsPolicyDisable, if we search google we come around eset analysis which states `that this variable is evaluated by the Windows OS loader during boot and if defined, the core VBS features, such as HVCI and Credential Guard will not be initialized.` , so basically this variable is responsible for current "security" at boot level. Cool next we have the function which takes that variable and
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/61d0e73f-8f7c-4eff-8f70-4d259bd5beb6)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/61d0e73f-8f7c-4eff-8f70-4d259bd5beb6" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (3).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 and so we can come to the conclusion that this must be a function which changes somehow the state of that variable. Cool so what are some possible function that could do this ? there's only one such function in EFI\_SYSTEM\_TABLE which EFI\_SET\_VARIABLE SetVariable;
 
@@ -345,7 +393,15 @@ db  77h ; w
 
 Now is there anything important about these bytes ? well yes, if you by chance have read the first part of the blacklotus analysis you'll know that i referenced an asian's researcher work. Well that researcher was kind enough to also analyse the dropped bootkit . Please check it out(https://www.cnblogs.com/DirWang/p/17294545.html#autoid-3-2-1) , so in his analysis he was kind enough to give us that info. He points us to https://github.com/Mattiwatti/EfiGuard/blob/master/EfiGuardDxe/PatchWinload.c . there we see a similar line
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/cb4aeaeb-44a0-46c5-a192-acf75ac5ecc5)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/cb4aeaeb-44a0-46c5-a192-acf75ac5ecc5" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Is there a specific reason behind this , honestly i don't know it's my first time analysing a bootkit . Please do let me know or make a pr/pull request to edit this document if you have more experience than i do :) in this area
 
@@ -353,7 +409,15 @@ Is there a specific reason behind this , honestly i don't know it's my first tim
 
 Cool next, fortune favours us and the pseudo code from ida is simillar with assebmly
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/823b3ab5-5b15-4324-98ce-e01792b49cfb)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/823b3ab5-5b15-4324-98ce-e01792b49cfb" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (5).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 so what i guess happens here is normal initialisation of EFI\_SYSTEM\_TABLE which basically i guess initializes which process to continue the boot process. and than we have the function call PatchBootManager
 
@@ -361,25 +425,81 @@ so what i guess happens here is normal initialisation of EFI\_SYSTEM\_TABLE whic
 
 PatchBootManager
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/531e8380-ea15-4882-9006-7506f6f823ef)
+<div>
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4ad8b398-cb66-4549-ae29-3c0ca87c8ab6)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/531e8380-ea15-4882-9006-7506f6f823ef" alt="1">
 
-![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/107e0158-d958-403b-b691-ed7e90836a5c)
+ 
+
+<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4ad8b398-cb66-4549-ae29-3c0ca87c8ab6" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/2.PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/107e0158-d958-403b-b691-ed7e90836a5c" alt="3">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 And from pseudo code
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/34213178-a799-4af8-87e5-3ebb70e9c49c)
+<div>
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/0748de2e-cead-4525-990b-87ca1a8ecfa3)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/34213178-a799-4af8-87e5-3ebb70e9c49c" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (3).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/0748de2e-cead-4525-990b-87ca1a8ecfa3" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (1).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Coll so first function call we see it does is HandleProtocol. So what the code does it do ? Luckly we stumble upong this when doing a quick google search (https://tianocore-docs.github.io/edk2-ModuleWriteGuide/draft/5\_uefi\_drivers/54\_communication\_between\_uefi\_drivers.html) and we see that it `retrieve protocols`. Cool nothign rlly that can i make sense. Ye i gotcha' fam. So basically this retrives communication informationmethods used by other UEFI drivers. Cool some more digging. we see the second parameter is
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4dcc9941-76b3-4c5a-94c3-3f74e6a71185)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4dcc9941-76b3-4c5a-94c3-3f74e6a71185" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (5).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 If we search for that specifc bytes we come across this
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8356ae68-043b-450a-b549-ee471b93483c)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8356ae68-043b-450a-b549-ee471b93483c" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (2).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 so wtf does EFI\_LOADED\_IMAGE\_PROTOCOL\_GUID do ? quoting from(https://uefi.org/specs/UEFI/2.10/09\_Protocols\_EFI\_Loaded\_Image.html) `Can be used on any image handle to obtain information about the loaded image.` , what type of info ? \`\`\`This section defines EFI\_LOADED\_IMAGE\_PROTOCOL and the EFI\_LOADED\_IMAGE\_DEVICE\_PATH\_PROTOCOL. Respectively, these protocols describe an Image that has been loaded into memory and specifies the device path used when a PE/COFF image was loaded through the EFI Boot Service LoadImage(). These descriptions include the source from which the image was loaded, the current location of the image in memory, the type of memory allocated for the image, and the parameters passed to the image when it was invoked.\`\`\`\`
 
