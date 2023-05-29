@@ -329,7 +329,7 @@ So when we demangle the string we get
 
  
 
-<figure><img src=".gitbook/assets/1 (34).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (34) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -415,7 +415,7 @@ Cool next, fortune favours us and the pseudo code from ida is simillar with asse
 
  
 
-<figure><img src=".gitbook/assets/2 (11).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (11) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -875,7 +875,7 @@ Now after this sort briefing as we were saying
 
  
 
-<figure><img src=".gitbook/assets/2 (10).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (10) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1046,7 +1046,7 @@ From asm perspective
 
  
 
-<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (8).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1098,7 +1098,7 @@ Anything ringing a bell yet ? nah well give it a minute it will sinc it , in the
 
  
 
-<figure><img src=".gitbook/assets/2 (8).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (9).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1122,7 +1122,7 @@ so we compare our in memory version of the binary(bootmgfrw.efi) with classical 
 
  
 
-<figure><img src=".gitbook/assets/2 (20).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (21).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1194,7 +1194,7 @@ Cool so we further compare whatever is at rax+0xe with 0x64 hmm cool interesting
 
  
 
-<figure><img src=".gitbook/assets/2 (21).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (20).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1306,7 +1306,7 @@ and repeat same process this time we check for type VS\_VERSION\_INFO
 
  
 
-<figure><img src=".gitbook/assets/2 (9).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (10).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1314,13 +1314,29 @@ so wtf is VS\_VERSION\_INFO? well microsoft(https://learn.microsoft.com/en-us/wi
 
 and finally if we found VS\_VERSION\_INFO we repeat same algorithm
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/714cdc22-c053-4ae0-9223-73738a19f7d6)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/714cdc22-c053-4ae0-9223-73738a19f7d6" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (34).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 this time with a twist, the twist being that we return the build id :) as we can see
 
 So as a conclusion wtf happened here actually ? well based on the name the chinese researcher used(GetPeFileVersionInfo\_BuildNumber\_) we can conclude that we actauly get build number for bootload as can be seen from the first image
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/66145dae-6a99-48cf-bc88-8f111f217333)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/66145dae-6a99-48cf-bc88-8f111f217333" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 where here we see the loade bootload in memory
 
