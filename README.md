@@ -129,7 +129,7 @@ also after selecting this you should input gdbserver to start a remeote instance
 
  
 
-<figure><img src=".gitbook/assets/1 (23).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (27).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -303,7 +303,7 @@ No problemo maybe now
 
  
 
-<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (20).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -313,7 +313,7 @@ No problemo maybe now
 
  
 
-<figure><img src=".gitbook/assets/2 (10).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (14).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -329,7 +329,7 @@ So when we demangle the string we get
 
  
 
-<figure><img src=".gitbook/assets/1 (24).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (29).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -341,7 +341,7 @@ So next when we end up to the call instruction
 
  
 
-<figure><img src=".gitbook/assets/2 (5).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -367,7 +367,7 @@ So first it demangles VbsPolicyDisable, if we search google we come around eset 
 
  
 
-<figure><img src=".gitbook/assets/2 (4).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (5).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -399,7 +399,7 @@ Now is there anything important about these bytes ? well yes, if you by chance h
 
  
 
-<figure><img src=".gitbook/assets/1 (15).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (21).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -415,7 +415,7 @@ Cool next, fortune favours us and the pseudo code from ida is simillar with asse
 
  
 
-<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (7).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -441,7 +441,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/2 (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (2).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -451,7 +451,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/1 (26).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (31).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -473,7 +473,7 @@ And from pseudo code
 
  
 
-<figure><img src=".gitbook/assets/2.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -485,7 +485,7 @@ Coll so first function call we see it does is HandleProtocol. So what the code d
 
  
 
-<figure><img src=".gitbook/assets/1 (19).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (23).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -497,7 +497,7 @@ If we search for that specifc bytes we come across this
 
  
 
-<figure><img src=".gitbook/assets/2 (2).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (3).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -505,11 +505,11 @@ so wtf does EFI\_LOADED\_IMAGE\_PROTOCOL\_GUID do ? quoting from(https://uefi.or
 
 So in our case grabs info about the bootkit. Now there's a problem we can't rlly inspect the resut of the function bc we have no debug symbols :/ but we can presume. and i tend to presume that the structure(result from previous function call)will be in rbx.
 
-<figure><img src=".gitbook/assets/1 (20).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (24).PNG" alt=""><figcaption></figcaption></figure>
 
 Next we call demangle string
 
-<figure><img src=".gitbook/assets/2 (3).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (4).PNG" alt=""><figcaption></figcaption></figure>
 
 which gets us
 
@@ -519,7 +519,7 @@ which gets us
 
  
 
-<figure><img src=".gitbook/assets/1 (10).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -555,7 +555,7 @@ sub\_180002B14
 
  
 
-<figure><img src=".gitbook/assets/2 (8).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (12).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -565,7 +565,7 @@ sub\_180002B14
 
  
 
-<figure><img src=".gitbook/assets/3.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/3 (3).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -577,13 +577,13 @@ and pseudo code
 
  
 
-<figure><img src=".gitbook/assets/1 (21).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (25).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 Cool so until the if everythin's self explanatory,now what about the if? We see again it does a call with unk\_180005010 as parameters which is an array of bytes again, upon further inspection it looks like this
 
-<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (19).PNG" alt=""><figcaption></figcaption></figure>
 
 Now if we inspect the first bytes again and do a quick search we come around this (https://github.com/theopolis/uefi-firmware-parser/blob/master/uefi\_firmware/guids/efiguids\_ami.py) more precisely this `'EFI_DEVICE_PATH_PROTOCOL_GUID': [0x09576e91, 0x6d3f, 0x11d2, 0x8e, 0x39, 0x00, 0xa0, 0xc9, 0x69, 0x72, 0x3b]` .
 
@@ -609,7 +609,7 @@ Next we see another function call unkow this time to us. Let's see what argument
 
  
 
-<figure><img src=".gitbook/assets/1 (9).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -621,7 +621,7 @@ Now if we inspect this in a debugger
 
  
 
-<figure><img src=".gitbook/assets/1 (28).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (33).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -635,7 +635,7 @@ Cool so if we manage to allocate enough space(the check if >= 0 is to check if w
 
  
 
-<figure><img src=".gitbook/assets/1 (25).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (30).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -647,7 +647,7 @@ it's only safe to assume
 
  
 
-<figure><img src=".gitbook/assets/2 (9).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (13).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -661,7 +661,7 @@ One interesting fact is that the buffer after allocating it is not zero but rath
 
  
 
-<figure><img src=".gitbook/assets/1 (22).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (26).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -673,7 +673,7 @@ So yeah anyway we end up calling memcpy after the call our buffer looks like thi
 
  
 
-<figure><img src=".gitbook/assets/1 (27).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (32).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -685,35 +685,77 @@ We than append some bytes to get the buffer to look like this
 
  
 
-<figure><img src=".gitbook/assets/2 (7).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (8).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
-And than call a function called FileDevicePath\_call which looks about like this ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d1c73955-aa14-47a1-ab17-b805560a989b) ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/bf57fb53-a51d-4178-9c9c-81d2ade48cba) ![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3323a02c-285c-4d36-894e-41cf79dbe411)
+And than call a function called FileDevicePath\_call which looks about like this&#x20;
+
+<figure><img src=".gitbook/assets/1 (9).PNG" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/3.PNG" alt=""><figcaption></figcaption></figure>
 
 And translates to this
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/308599ed-ebc7-4649-9e85-7883b65379e0)
+<div>
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d33dca2e-e5d8-456c-a846-1e7d9d968680)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d33dca2e-e5d8-456c-a846-1e7d9d968680" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (9).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Cool but this don make no sense if not explained so....
 
 first we have a custom implementation of strlen which we won't dissecc cause it's usless :) But here's the result
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4bddf53d-cd3a-4ee4-897d-e325a74ed1e9)
+<div>
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/c36d8166-1f74-428b-b710-47524702ce52)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4bddf53d-cd3a-4ee4-897d-e325a74ed1e9" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (22).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/c36d8166-1f74-428b-b710-47524702ce52" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (10).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 32 chars from len(of(str)+"\x00" and than the last 4 bytes appended before the function call 0x4FF7F
 
 Next we call what i also used from the asian's research blog post PxepDevicePathInstanceCount, which is simply strlen, cause it simply counts each letter and has a counter. as seen here
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7c91b17e-3fda-4e96-bbfa-ff66af3e0f29)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7c91b17e-3fda-4e96-bbfa-ff66af3e0f29" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (10).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 So yeah we see pop rbx and after call we see rbx=0x48
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/204da595-ad18-4a15-8056-a88b32e34d97)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/204da595-ad18-4a15-8056-a88b32e34d97" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2.PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 we than call against strlen again on the same string , i guess this is just bc on next line precisly , `v6 + v4 * v5;` we do v4\*v5 which is like i guess some way of having unicode strings i guess
 
@@ -721,15 +763,39 @@ Anyway an than we allocate memory again using gEfiBootServices + 64 which we pre
 
 So here we also see something nice which is
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/c6d60d0e-954e-4e6d-9ab3-98e63b8259f9)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/c6d60d0e-954e-4e6d-9ab3-98e63b8259f9" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (34).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 the fact that here the memory block has the pattern afafafaf in it .
 
 So what happens next is that we get two buffer which look like this after the main loop executes
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/08238484-8e74-4220-aa7f-7f54771f58d1)
+<div>
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/897d6022-3cd1-4142-b610-b7674012f8ef)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/08238484-8e74-4220-aa7f-7f54771f58d1" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (11).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/897d6022-3cd1-4142-b610-b7674012f8ef" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/3 (4).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 And truelly speaking we are interested in only the first one because that's what get's returned, so we can conclude this simply i guess copies the device path and clear some garbabe from buffer. :))
 
