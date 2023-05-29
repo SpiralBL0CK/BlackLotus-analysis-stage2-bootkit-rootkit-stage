@@ -10,7 +10,7 @@ Before we dive into this divine shit(belive me this is some divine shit as nobod
 
  
 
-<figure><img src=".gitbook/assets/1 (8).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (8) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -189,7 +189,7 @@ Bindiffing the original winload.efi with the one dropped by the blacklotus
 
  
 
-<figure><img src=".gitbook/assets/1 (12) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (12) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -237,7 +237,7 @@ Cool so let's start dissecating. So first we see that we have a function which g
 
  
 
-<figure><img src=".gitbook/assets/1 (6) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (6) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -269,7 +269,7 @@ Cool another function . Not quite... Notice something familiary ?
 
  
 
-<figure><img src=".gitbook/assets/1 (4) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (4) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -313,7 +313,7 @@ No problemo maybe now
 
  
 
-<figure><img src=".gitbook/assets/2 (20).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (20) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -341,7 +341,7 @@ So next when we end up to the call instruction
 
  
 
-<figure><img src=".gitbook/assets/2 (9).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (9) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -353,7 +353,7 @@ and we get no info.... great, but why is that ? bc we don't have a .pdb file so 
 
  
 
-<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (6) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -497,7 +497,7 @@ If we search for that specifc bytes we come across this
 
  
 
-<figure><img src=".gitbook/assets/2 (4).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (4) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -509,7 +509,7 @@ So in our case grabs info about the bootkit. Now there's a problem we can't rlly
 
 Next we call demangle string
 
-<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (6) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 which gets us
 
@@ -519,7 +519,7 @@ which gets us
 
  
 
-<figure><img src=".gitbook/assets/1 (15).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (15) (2).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -545,7 +545,7 @@ sub\_180002B14
 
  
 
-<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (4) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -583,7 +583,7 @@ and pseudo code
 
 Cool so until the if everythin's self explanatory,now what about the if? We see again it does a call with unk\_180005010 as parameters which is an array of bytes again, upon further inspection it looks like this
 
-<figure><img src=".gitbook/assets/1 (20).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (20) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 Now if we inspect the first bytes again and do a quick search we come around this (https://github.com/theopolis/uefi-firmware-parser/blob/master/uefi\_firmware/guids/efiguids\_ami.py) more precisely this `'EFI_DEVICE_PATH_PROTOCOL_GUID': [0x09576e91, 0x6d3f, 0x11d2, 0x8e, 0x39, 0x00, 0xa0, 0xc9, 0x69, 0x72, 0x3b]` .
 
@@ -609,7 +609,7 @@ Next we see another function call unkow this time to us. Let's see what argument
 
  
 
-<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (13) (2).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -693,7 +693,7 @@ And than call a function called FileDevicePath\_call which looks about like this
 
 <figure><img src=".gitbook/assets/1 (11).PNG" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/3.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/3 (1).PNG" alt=""><figcaption></figcaption></figure>
 
 And translates to this
 
@@ -741,7 +741,7 @@ Next we call what i also used from the asian's research blog post PxepDevicePath
 
  
 
-<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (12) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -839,7 +839,7 @@ Cool before we head in for some more let me quickly explain wtf is winload.efi. 
 
  
 
-<figure><img src=".gitbook/assets/1 (33).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (33) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -889,7 +889,7 @@ Now for the fun lets pretend we fail to analyse that function and we get detecte
 
  
 
-<figure><img src=".gitbook/assets/1 (31).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (31) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -923,7 +923,7 @@ and if we inspect previous paramets to memcpy
 
  
 
-<figure><img src=".gitbook/assets/2 (8).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (8) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1018,63 +1018,199 @@ if we manage to load the bootmgfrw.efi(bc winload.efi here is the actual windows
 
 From a graph perspective
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/5aa56df4-9041-4caa-b664-240c45cdeb2d)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/5aa56df4-9041-4caa-b664-240c45cdeb2d" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (15).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 From asm perspective
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d2b372eb-dae2-4d82-9f3d-c797832a7003)
+<div>
 
-![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/5bbc71cf-21fb-4f1b-8aa3-a27a41424030)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d2b372eb-dae2-4d82-9f3d-c797832a7003" alt="2">
 
-![4](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/47b347ec-d704-4a7a-8b5e-b292fa96fc38)
+ 
 
-![5](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/a8e64fa1-494f-46d4-b430-293330699055)
+<figure><img src=".gitbook/assets/1 (31).PNG" alt=""><figcaption></figcaption></figure>
 
-![6](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/575c62d6-e496-47ec-8d6e-5b12b0581a14)
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/5bbc71cf-21fb-4f1b-8aa3-a27a41424030" alt="3">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/47b347ec-d704-4a7a-8b5e-b292fa96fc38" alt="4">
+
+ 
+
+<figure><img src=".gitbook/assets/3.PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/a8e64fa1-494f-46d4-b430-293330699055" alt="5">
+
+ 
+
+<figure><img src=".gitbook/assets/4.PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/575c62d6-e496-47ec-8d6e-5b12b0581a14" alt="6">
+
+ 
+
+<figure><img src=".gitbook/assets/5.PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Anything ringing a bell yet ? nah well give it a minute it will sinc it , in the meantime take a lookt at pseudo code pov
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7925bb02-d783-40f0-948e-49abef678d24)
+<div>
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/453760be-f468-462e-a3db-eb462468264c)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7925bb02-d783-40f0-948e-49abef678d24" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (41).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/453760be-f468-462e-a3db-eb462468264c" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (8).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 we see some parsing of an exe :) now idk how much it will be the same as the one from previous part(part1) but let's see :)
 
 so we compare our in memory version of the binary(bootmgfrw.efi) with classical mz header(0x5A4D), as you can see
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/800e0d4e-1faf-43a0-b04d-b6c73f9abd8e)
+<div>
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/dc1996fc-1b71-41bd-9a29-eb4e1d15d0fc)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/800e0d4e-1faf-43a0-b04d-b6c73f9abd8e" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/dc1996fc-1b71-41bd-9a29-eb4e1d15d0fc" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (20).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ok next we do another classic check which is if we can find pe header
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4058d60e-acc1-4411-a2db-3017c36427af)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4058d60e-acc1-4411-a2db-3017c36427af" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Cool next we call sub\_1800024C4() which looks like this
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/fb118a05-9ad3-4854-8405-37f289ffd607)
+<div>
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/db63719a-d764-462a-b42c-e2e32624cb9c)
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/fb118a05-9ad3-4854-8405-37f289ffd607" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (4).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/db63719a-d764-462a-b42c-e2e32624cb9c" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (20).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Cool so what happens here is that we locate certain values in memory and if we found them we return them. Please reffer to sub\_180002538.py.py for the emulation.
 
 Anyhow here's sub\_180002464
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/06588bc7-c043-436b-a6fb-5ca40580fd18)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/06588bc7-c043-436b-a6fb-5ca40580fd18" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (42).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 If we successfully execute sub\_1800024C4 we return in the bigger function and follow a few more checks , cool beans let's mase some sense of these
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/99a2be43-6ae7-48ea-a199-1d26fc612239)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/99a2be43-6ae7-48ea-a199-1d26fc612239" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Cool so we further compare whatever is at rax+0xe with 0x64 hmm cool interesting , inspecting rax+0xe
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7b5f3e08-81b6-463b-8c17-294b2fff4183)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7b5f3e08-81b6-463b-8c17-294b2fff4183" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (21).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Any special reason behind this specific check? honestly idk? it might be if you know please make a pull request and edit this document
 
 we do some more addition and than a comparison
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7bd6b38b-6772-4163-a10e-f74ca8b043af)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/7bd6b38b-6772-4163-a10e-f74ca8b043af" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 I wanna stop here for a minute and reference again the previous source of inspiration for this article whenever i got lost, so in his blog he renamed the function which compared values to RtlpImageDirectoryEntryToDataEx, which if we search we got no results but there's something close enough to his names and that is RtlImageDirectoryEntryToData , which basically does this `Given the base address of a kernel module and the index of an entry in the data directory, RtlImageDirectoryEntryToData() returns the virtual address and the size of the directory entry`(https://codemachine.com/articles/top\_ten\_kernel\_apis.html) in our case since we are in an efi/uefi app we can consider that the 50 we see is the size of bytes/mb idk here of our root partition in this case and that that address which is in rax is an entry in our directory.
 
@@ -1112,7 +1248,15 @@ More please!
 
 So up next
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/533ff6f9-cf2d-4b6b-ac79-d7a6f8ec12a5)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/533ff6f9-cf2d-4b6b-ac79-d7a6f8ec12a5" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (23).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 what dis to is that basically iterate over every resource from directory and checks to see if it's of type string
 
@@ -1120,19 +1264,51 @@ ngl i don't know why he would so if i'm wrong sorry if i'm not cheers!
 
 next
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8ebdca15-08da-47d9-b0f8-70639e7b8731)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/8ebdca15-08da-47d9-b0f8-70639e7b8731" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (33).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 so what happens here is that we add some offsets and end up to what the chinese researcher says it's second resource table, as you can see
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/211f6b1d-9be2-4dc5-8e6d-122761b24363)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/211f6b1d-9be2-4dc5-8e6d-122761b24363" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (22).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 and than we repeat same process to get some offsets
 
-![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/ce012c6a-a660-4ee0-80c1-c68df17f4406)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/ce012c6a-a660-4ee0-80c1-c68df17f4406" alt="2">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (8).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 and repeat same process this time we check for type VS\_VERSION\_INFO
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2745ecfc-f8c7-4b27-8a3c-0c3654813e06)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2745ecfc-f8c7-4b27-8a3c-0c3654813e06" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (9).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 so wtf is VS\_VERSION\_INFO? well microsoft(https://learn.microsoft.com/en-us/windows/win32/menurc/versioninfo-resource) says that `Defines a version-information resource`, eg i belive is simply says the version of bootmgfrw.ef
 
