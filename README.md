@@ -717,8 +717,7 @@ Cool next ?
 ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/28cc6ac2-26ee-4af9-9a2e-734258340b68)
 
 
-So what happens next is RaiseTPL . ok so what this do ?
+So what happens next is RaiseTPL . ok so what this do ?  Raises the priority of the currently executing task and returns its previous priority level.
+In our case it will be run as highest execution privillages.
 
-So in order to undestand RaiseTPL we need to undestand events.
-
-what and event is ? exactly as the name suggests it's something that happened(an event). RaiseTPL 
+Next we call what i called patch_something
