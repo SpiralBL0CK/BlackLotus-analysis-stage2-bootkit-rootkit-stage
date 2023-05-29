@@ -22,7 +22,7 @@ Frist things first this is how a healthy system looks like
 
  
 
-<figure><img src=".gitbook/assets/1 (11) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (11).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -117,7 +117,7 @@ Before we get started how does one setup the environment for the analysis of an 
 
 \-Third i had to configure my windbg. How tf did i do this ? I downloaded everything from this link(`git clone https://github.com/microsoft/WinDbg-Samples`). Than i compiled ExdiGdbSrv.sln. Thank i followed everything from this link(https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/setting-up-qemu-kernel-mode-debugging-using-exdi), from whevere it said `Use regsvr32 to register the DLL in an Administrator command prompt.` till `PS>.\Start-ExdiDebugger.ps1 -ExdiTarget "QEMU" -GdbPort 1234 -Architecture x64 -ExdiDropPath "C:\path\to\built\exdi\files"`. Confusing i know but please wait patiencly as i will defently make a video where i will explain every step! Cool so now that we have a setup environment for debugging how tf do we debug the code ? So we start qemu in my case i did it by executing `qemu-system-x86_64.exe -L . -bios OVMF.fd -hdd dos.img -debugcon file:debug.log -global isa-debugcon.iobase=0x402` . Once i ran qemu commmand i instantly went and selected compat\_monitor0 from view menu of qemu. It should look like that when you do that.&#x20;
 
-<figure><img src=".gitbook/assets/1 (14) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (14).PNG" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -129,7 +129,7 @@ also after selecting this you should input gdbserver to start a remeote instance
 
  
 
-<figure><img src=".gitbook/assets/1 (15).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (23).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -143,7 +143,7 @@ So how do we set up a breakpoint in order to debug the bootkit? Well that's we w
 
  
 
-<figure><img src=".gitbook/assets/1 (17) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (17).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -215,7 +215,7 @@ Cool so let's get this party started.
 
  
 
-<figure><img src=".gitbook/assets/1 (7) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (7).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -279,7 +279,7 @@ Cool another function . Not quite... Notice something familiary ?
 
  
 
-<figure><img src=".gitbook/assets/1 (2).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (2) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -289,7 +289,7 @@ Cool another function . Not quite... Notice something familiary ?
 
  
 
-<figure><img src=".gitbook/assets/1 (10).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (10) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -303,7 +303,7 @@ No problemo maybe now
 
  
 
-<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -313,7 +313,7 @@ No problemo maybe now
 
  
 
-<figure><img src=".gitbook/assets/2 (8).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (10).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -329,7 +329,7 @@ So when we demangle the string we get
 
  
 
-<figure><img src=".gitbook/assets/1 (19).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (24).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -341,7 +341,7 @@ So next when we end up to the call instruction
 
  
 
-<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (5).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -353,7 +353,7 @@ and we get no info.... great, but why is that ? bc we don't have a .pdb file so 
 
  
 
-<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (5).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -367,7 +367,7 @@ So first it demangles VbsPolicyDisable, if we search google we come around eset 
 
  
 
-<figure><img src=".gitbook/assets/2 (5).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (4).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -399,7 +399,7 @@ Now is there anything important about these bytes ? well yes, if you by chance h
 
  
 
-<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (15).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -415,7 +415,7 @@ Cool next, fortune favours us and the pseudo code from ida is simillar with asse
 
  
 
-<figure><img src=".gitbook/assets/2 (7).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -431,7 +431,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -441,7 +441,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/2.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -451,7 +451,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/1 (20).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (26).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -463,7 +463,7 @@ And from pseudo code
 
  
 
-<figure><img src=".gitbook/assets/1 (5).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (2).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -473,7 +473,7 @@ And from pseudo code
 
  
 
-<figure><img src=".gitbook/assets/2 (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2.PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -485,7 +485,7 @@ Coll so first function call we see it does is HandleProtocol. So what the code d
 
  
 
-<figure><img src=".gitbook/assets/1 (7).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (19).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -505,11 +505,11 @@ so wtf does EFI\_LOADED\_IMAGE\_PROTOCOL\_GUID do ? quoting from(https://uefi.or
 
 So in our case grabs info about the bootkit. Now there's a problem we can't rlly inspect the resut of the function bc we have no debug symbols :/ but we can presume. and i tend to presume that the structure(result from previous function call)will be in rbx.
 
-<figure><img src=".gitbook/assets/1 (11).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (20).PNG" alt=""><figcaption></figcaption></figure>
 
 Next we call demangle string
 
-<figure><img src=".gitbook/assets/2 (4).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (3).PNG" alt=""><figcaption></figcaption></figure>
 
 which gets us
 
@@ -519,7 +519,7 @@ which gets us
 
  
 
-<figure><img src=".gitbook/assets/1 (23).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (10).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -531,7 +531,7 @@ and than we call
 
  
 
-<figure><img src=".gitbook/assets/1 (3).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1.PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -545,7 +545,7 @@ sub\_180002B14
 
  
 
-<figure><img src=".gitbook/assets/1 (9).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (3).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -555,7 +555,7 @@ sub\_180002B14
 
  
 
-<figure><img src=".gitbook/assets/2 (3).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (8).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -577,13 +577,13 @@ and pseudo code
 
  
 
-<figure><img src=".gitbook/assets/1 (14).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (21).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 Cool so until the if everythin's self explanatory,now what about the if? We see again it does a call with unk\_180005010 as parameters which is an array of bytes again, upon further inspection it looks like this
 
-<figure><img src=".gitbook/assets/1.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
 
 Now if we inspect the first bytes again and do a quick search we come around this (https://github.com/theopolis/uefi-firmware-parser/blob/master/uefi\_firmware/guids/efiguids\_ami.py) more precisely this `'EFI_DEVICE_PATH_PROTOCOL_GUID': [0x09576e91, 0x6d3f, 0x11d2, 0x8e, 0x39, 0x00, 0xa0, 0xc9, 0x69, 0x72, 0x3b]` .
 
@@ -595,7 +595,7 @@ If we go again on uefi's spec page we see that `Can be used on any device handle
 
  
 
-<figure><img src=".gitbook/assets/1 (17).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -609,7 +609,7 @@ Next we see another function call unkow this time to us. Let's see what argument
 
  
 
-<figure><img src=".gitbook/assets/1 (22).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (9).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -621,7 +621,7 @@ Now if we inspect this in a debugger
 
  
 
-<figure><img src=".gitbook/assets/1 (21).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (28).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -629,25 +629,65 @@ we see a weird thing rcx has a debug string which AllocatePool, which comes afte
 
 Cool so if we manage to allocate enough space(the check if >= 0 is to check if we succesed to allocate bc if EFI\_OUT\_OF\_RESOURCES is implemented as
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/a4e16a3b-57ff-44e4-b6a0-86a971f8b429)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/a4e16a3b-57ff-44e4-b6a0-86a971f8b429" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (25).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 it's only safe to assume
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/6b4cb668-f835-474a-9ceb-0fcc8599790b)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/6b4cb668-f835-474a-9ceb-0fcc8599790b" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (9).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 is used for success allocation)
 
 One interesting fact is that the buffer after allocating it is not zero but rather it has these bytes in it. If anyone knows more abut this please make a pr request to edit this document
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/36c1351c-ad7d-43e4-9792-58ceea64963e)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/36c1351c-ad7d-43e4-9792-58ceea64963e" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (22).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 So yeah anyway we end up calling memcpy after the call our buffer looks like this
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/fa69388b-1cca-403e-a073-4ce8331900d7)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/fa69388b-1cca-403e-a073-4ce8331900d7" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (27).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 We than append some bytes to get the buffer to look like this
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/85b5591b-9ea5-4b0a-8c23-1bcfdad7a0c5)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/85b5591b-9ea5-4b0a-8c23-1bcfdad7a0c5" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/2 (7).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 And than call a function called FileDevicePath\_call which looks about like this ![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/d1c73955-aa14-47a1-ab17-b805560a989b) ![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/bf57fb53-a51d-4178-9c9c-81d2ade48cba) ![3](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/3323a02c-285c-4d36-894e-41cf79dbe411)
 
