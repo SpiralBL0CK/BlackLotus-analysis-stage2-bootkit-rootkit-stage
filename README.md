@@ -117,7 +117,7 @@ Before we get started how does one setup the environment for the analysis of an 
 
 \-Third i had to configure my windbg. How tf did i do this ? I downloaded everything from this link(`git clone https://github.com/microsoft/WinDbg-Samples`). Than i compiled ExdiGdbSrv.sln. Thank i followed everything from this link(https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/setting-up-qemu-kernel-mode-debugging-using-exdi), from whevere it said `Use regsvr32 to register the DLL in an Administrator command prompt.` till `PS>.\Start-ExdiDebugger.ps1 -ExdiTarget "QEMU" -GdbPort 1234 -Architecture x64 -ExdiDropPath "C:\path\to\built\exdi\files"`. Confusing i know but please wait patiencly as i will defently make a video where i will explain every step! Cool so now that we have a setup environment for debugging how tf do we debug the code ? So we start qemu in my case i did it by executing `qemu-system-x86_64.exe -L . -bios OVMF.fd -hdd dos.img -debugcon file:debug.log -global isa-debugcon.iobase=0x402` . Once i ran qemu commmand i instantly went and selected compat\_monitor0 from view menu of qemu. It should look like that when you do that.&#x20;
 
-<figure><img src=".gitbook/assets/1 (14).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (14) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -129,7 +129,7 @@ also after selecting this you should input gdbserver to start a remeote instance
 
  
 
-<figure><img src=".gitbook/assets/1 (9).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -205,7 +205,7 @@ Cool so let's get this party started.
 
  
 
-<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (13) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -303,7 +303,7 @@ No problemo maybe now
 
  
 
-<figure><img src=".gitbook/assets/1.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (3).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -313,7 +313,7 @@ No problemo maybe now
 
  
 
-<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (7).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -329,7 +329,7 @@ So when we demangle the string we get
 
  
 
-<figure><img src=".gitbook/assets/1 (11).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (13).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -341,7 +341,7 @@ So next when we end up to the call instruction
 
  
 
-<figure><img src=".gitbook/assets/2 (4).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (5).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -353,7 +353,7 @@ and we get no info.... great, but why is that ? bc we don't have a .pdb file so 
 
  
 
-<figure><img src=".gitbook/assets/1 (7).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (11).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -367,7 +367,7 @@ So first it demangles VbsPolicyDisable, if we search google we come around eset 
 
  
 
-<figure><img src=".gitbook/assets/2 (3).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (4).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -399,7 +399,7 @@ Now is there anything important about these bytes ? well yes, if you by chance h
 
  
 
-<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (5).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -415,7 +415,7 @@ Cool next, fortune favours us and the pseudo code from ida is simillar with asse
 
  
 
-<figure><img src=".gitbook/assets/2 (5).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (6).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -431,7 +431,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (9).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -441,7 +441,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/2.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2 (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -451,7 +451,7 @@ PatchBootManager
 
  
 
-<figure><img src=".gitbook/assets/1 (12).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (14).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -463,7 +463,7 @@ And from pseudo code
 
  
 
-<figure><img src=".gitbook/assets/1 (3).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (4).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -473,7 +473,7 @@ And from pseudo code
 
  
 
-<figure><img src=".gitbook/assets/2 (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2.PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -485,7 +485,7 @@ Coll so first function call we see it does is HandleProtocol. So what the code d
 
  
 
-<figure><img src=".gitbook/assets/1 (5).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (6).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -505,15 +505,35 @@ so wtf does EFI\_LOADED\_IMAGE\_PROTOCOL\_GUID do ? quoting from(https://uefi.or
 
 So in our case grabs info about the bootkit. Now there's a problem we can't rlly inspect the resut of the function bc we have no debug symbols :/ but we can presume. and i tend to presume that the structure(result from previous function call)will be in rbx.
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/2f78a287-f5a9-4589-979d-81137ffbbd8e) Next we call demangle string![2](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/5d82e2cb-f627-44b9-8765-b2c73dc922d3)
+<figure><img src=".gitbook/assets/1 (7).PNG" alt=""><figcaption></figcaption></figure>
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/37bab900-171e-4cc8-9150-f537242e8f4e) which gets us
+Next we call demangle string
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/77ac1280-d7de-4f0e-956c-a6f6f7aeedd6)
+<figure><img src=".gitbook/assets/2 (3).PNG" alt=""><figcaption></figcaption></figure>
+
+which gets us
+
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/77ac1280-d7de-4f0e-956c-a6f6f7aeedd6" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1 (20).PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 and than we call
 
-![1](https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4f66b2c5-a3c3-457d-88f2-fde4e55a1b7f)
+<div>
+
+<img src="https://github.com/SpiralBL0CK/BlackLotus-analysis-stage2-bootkit-rootkit-stage/assets/25670930/4f66b2c5-a3c3-457d-88f2-fde4e55a1b7f" alt="1">
+
+ 
+
+<figure><img src=".gitbook/assets/1.PNG" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 \=============================================================================
 
