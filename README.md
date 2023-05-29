@@ -881,7 +881,7 @@ Now for the fun lets pretend we fail to analyse that function and we get detecte
 
  
 
-<figure><img src=".gitbook/assets/1 (31) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (31) (1) (1).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1326,7 +1326,7 @@ So as a conclusion wtf happened here actually ? well based on the name the chine
 
  
 
-<figure><img src=".gitbook/assets/1 (12) (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (31).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -1340,7 +1340,7 @@ in second image we see
 
  
 
-<figure><img src=".gitbook/assets/1 (41).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (43).PNG" alt=""><figcaption></figcaption></figure>
 
 </div>
 
