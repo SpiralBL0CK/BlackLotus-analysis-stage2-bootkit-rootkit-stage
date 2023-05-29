@@ -718,3 +718,7 @@ Cool next ?
 
 
 So what happens next is RaiseTPL . ok so what this do ?
+
+So in order to undestand RaiseTPL we need to undestand events.
+
+what and event is ? exactly as the name suggests it's something that happened(an event). RaiseTPL 
